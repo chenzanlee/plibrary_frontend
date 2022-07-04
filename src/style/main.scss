@@ -1,0 +1,13 @@
+@import './var.scss';
+@import './mixin.scss';
+
+//  ---------物联网平台公用样式
+.container {
+  color: $font_color;
+  background-color: $bg_cor;
+  // @include center;
+}
+// 块背景色
+.mainAll_bg {
+  background-color: $header_bg_cor;
+}

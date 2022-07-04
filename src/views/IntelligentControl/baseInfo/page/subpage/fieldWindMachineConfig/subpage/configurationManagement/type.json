@@ -1,0 +1,252 @@
+{
+  "arr": [
+    {
+      "label": "定速风机1",
+     "key": "windConstantConfig1",
+      "type": "select",
+      "className": "shadow",
+      "list": "nameList",
+      "span": 12,
+      "required": true,
+      "clearable": true,
+      "props": {
+        "value": "code",
+        "label": "title"
+      }
+    },
+    {
+      "label": "定速风机2",
+      "key": "windConstantConfig2",
+      "type": "select",
+      "className": "shadow",
+      "list": "nameList",
+      "span": 12,
+      "required": true,
+      "props": {
+        "value": "code",
+        "label": "title"
+      }
+    },
+    {
+      "label": "定速风机3",
+      "key": "windConstantConfig3",
+      "type": "select",
+      "className": "shadow",
+      "list": "nameList",
+      "span": 12,
+      "required": true,
+      "props": {
+        "value": "code",
+        "label": "title"
+      }
+    },
+    {
+      "label": "定速风机4",
+      "key": "windConstantConfig4",
+      "type": "select",
+      "className": "shadow",
+      "list": "nameList",
+      "span": 12,
+      "required": true,
+      "props": {
+        "value": "code",
+        "label": "title"
+      }
+    },
+    {
+      "label": "定速风机5",
+      "key": "windConstantConfig5",
+      "type": "select",
+      "className": "shadow",
+      "list": "nameList",
+      "span": 12,
+      "required": true,
+      "props": {
+        "value": "code",
+        "label": "title"
+      }
+    },
+    {
+      "label": "定速风机6",
+      "key": "windConstantConfig6",
+      "type": "select",
+      "className": "shadow",
+      "list": "nameList",
+      "span": 12,
+      "required": true,
+      "props": {
+        "value": "code",
+        "label": "title"
+      }
+    },
+    {
+      "label": "热交换变速风机1",
+      "key": "windPressureConfig1",
+      "type": "select",
+      "className": "shadow",
+      "list": "typeList",
+      "span": 12,
+      "required": true,
+      "props": {
+        "value": "code",
+        "label": "title"
+      }
+    },
+    {
+      "label": "热交换变速风机2",
+      "key": "windPressureConfig2",
+      "type": "select",
+      "className": "shadow",
+      "list": "typeList",
+      "span": 12,
+      "required": true,
+      "props": {
+        "value": "code",
+        "label": "title"
+      }
+    },
+    {
+      "label": "地沟变速风机1",
+      "key": "windPressureConfig3",
+      "type": "select",
+      "className": "shadow",
+      "list": "typeList",
+      "span": 12,
+      "required": true,
+      "props": {
+        "value": "code",
+        "label": "title"
+      }
+    },
+    {
+      "label": "地沟变速风机2",
+      "key": "windPressureConfig4",
+      "type": "select",
+      "className": "shadow",
+      "list": "typeList",
+      "span": 12,
+      "required": true,
+      "props": {
+        "value": "code",
+        "label": "title"    
+      }
+    },
+    {
+      "label": "地沟变频风机",
+      "key": "windFrequencyConfig1",
+      "type": "select",
+      "className": "shadow",
+      "list": "modelList",
+      "span": 12,
+      "required": true,
+      "props": {
+        "value": "code",
+        "label": "title"
+      }
+    },
+    {
+      "label": "热交换变频风机",
+      "key": "windFrequencyConfig2",
+      "type": "select",
+      "className": "shadow",
+      "list": "modelList",
+      "span": 12,
+      "required": true,
+      "props": {
+        "value": "code",
+        "label": "title"
+      }
+    },
+    {
+      "label": "端部变频风机1",
+      "key": "windFrequencyConfig3",
+      "type": "select",
+      "className": "shadow",
+      "list": "modelList",
+      "span": 12,
+      "required": true,
+      "props": {
+        "value": "code",
+        "label": "title"
+      }
+    },
+    {
+      "label": "端部变频风机2",
+      "key": "windFrequencyConfig4",
+      "type": "select",
+      "className": "shadow",
+      "list": "modelList",
+      "span": 12,
+      "required": true,
+      "props": {
+        "value": "code",
+        "label": "title"
+      }
+    },
+    {
+      "label": "端部变频风机3",
+      "key": "windFrequencyConfig5",
+      "type": "select",
+      "className": "shadow",
+      "list": "modelList",
+      "span": 12,
+      "required": true,
+      "props": {
+        "value": "code",
+        "label": "title"
+      }
+    },
+    {
+      "label": "吊顶变频风机1",
+      "key": "windFrequencyConfig6",
+      "type": "select",
+      "className": "shadow",
+      "list": "modelList",
+      "span": 12,
+      "required": true,
+      "props": {
+        "value": "code",
+        "label": "title"
+      }
+    },
+    {
+      "label": "吊顶变频风机2",
+      "key": "windFrequencyConfig7",
+      "type": "select",
+      "className": "shadow",
+      "list": "modelList",
+      "span": 12,
+      "required": true,
+      "props": {
+        "value": "code",
+        "label": "title"
+      }
+    },
+    {
+      "label": "吊顶变频风机3",
+      "key": "windFrequencyConfig8",
+      "type": "select",
+      "className": "shadow",
+      "list": "modelList",
+      "span": 12,
+      "required": true,
+      "props": {
+        "value": "code",
+        "label": "title"
+      }
+    },
+    {
+      "label": "热交换变频风机2",
+      "key": "windFrequencyConfig9",
+      "type": "select",
+      "className": "shadow",
+      "list": "modelList",
+      "span": 12,
+      "required": true,
+      "props": {
+        "value": "code",
+        "label": "title"
+      }
+    }
+  ]
+}

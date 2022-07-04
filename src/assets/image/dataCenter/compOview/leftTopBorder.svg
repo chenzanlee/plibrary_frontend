@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="90px" viewBox="0 0 140 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>路径</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页大屏" transform="translate(-281.000000, -127.000000)" fill="#03B9CC">
+            <polygon id="路径" points="421 127 414 131 321.333 131 320 129 303 129 301.667 131 284.999 130.999 285 147.667 283 149 283 166 285 167.333 285 210 281 217 281 127"></polygon>
+        </g>
+    </g>
+</svg>

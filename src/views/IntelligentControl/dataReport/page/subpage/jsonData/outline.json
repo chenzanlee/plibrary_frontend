@@ -1,0 +1,202 @@
+{
+  "status": 200,
+  "message": null,
+  "data": [
+    {
+      "fieldName": "邓州5场2区",
+      "offlineTime": "2020-08-19 10:05:54",
+      "fieldId": "15118684"
+    },
+    {
+      "fieldName": "卧龙1场生长场",
+      "offlineTime": "2020-03-09 12:10:10",
+      "fieldId": "15375721"
+    },
+    {
+      "fieldName": "杞县5场",
+      "offlineTime": "2020-08-16 09:34:30",
+      "fieldId": "15347606"
+    },
+    {
+      "fieldName": "滑县7场",
+      "offlineTime": "2020-08-12 12:50:43",
+      "fieldId": "15323844"
+    },
+    {
+      "fieldName": "滑县12场",
+      "offlineTime": "2020-08-22 20:58:18",
+      "fieldId": "15378118"
+    },
+    {
+      "fieldName": "方城4场繁殖场",
+      "offlineTime": "2020-04-15 11:25:05",
+      "fieldId": "15400286"
+    },
+    {
+      "fieldName": "方城8场繁殖场2区",
+      "offlineTime": "2020-05-10 13:10:25",
+      "fieldId": "15418099"
+    },
+    {
+      "fieldName": "方城5厂繁殖厂",
+      "offlineTime": "2020-05-21 20:30:13",
+      "fieldId": "15418321"
+    },
+    {
+      "fieldName": "方城5场生长场",
+      "offlineTime": "2020-05-20 13:25:12",
+      "fieldId": "15418323"
+    },
+    {
+      "fieldName": "翁牛特8场繁殖场",
+      "offlineTime": "2020-05-21 15:30:59",
+      "fieldId": "15417164"
+    },
+    {
+      "fieldName": "广宗5场繁殖场",
+      "offlineTime": "2020-08-19 20:24:39",
+      "fieldId": "15424804"
+    },
+    {
+      "fieldName": "铜山7场",
+      "offlineTime": "2020-08-22 16:42:23",
+      "fieldId": "15340518"
+    },
+    {
+      "fieldName": "铜山9场",
+      "offlineTime": "2020-04-30 16:39:03",
+      "fieldId": "15385931"
+    },
+    {
+      "fieldName": "农安12场生长场",
+      "offlineTime": "2020-08-05 14:18:22",
+      "fieldId": "15334643"
+    },
+    {
+      "fieldName": "龙江3场",
+      "offlineTime": "2020-02-06 16:40:07",
+      "fieldId": "15319209"
+    },
+    {
+      "fieldName": "双辽6厂2区",
+      "offlineTime": "2020-08-16 19:33:02",
+      "fieldId": "15330943"
+    },
+    {
+      "fieldName": "通榆12场生长场1区",
+      "offlineTime": "2020-08-22 15:39:34",
+      "fieldId": "15389555"
+    },
+    {
+      "fieldName": "颍泉2场1区",
+      "offlineTime": "2020-08-21 16:39:58",
+      "fieldId": "15338633"
+    },
+    {
+      "fieldName": "颍泉4场生长场",
+      "offlineTime": "2020-08-20 17:24:24",
+      "fieldId": "15417529"
+    },
+    {
+      "fieldName": "蒙城7场繁殖场",
+      "offlineTime": "2020-05-28 23:20:14",
+      "fieldId": "15338796"
+    },
+    {
+      "fieldName": "蒙城7厂生长厂",
+      "offlineTime": "2020-08-02 15:45:12",
+      "fieldId": "15414505"
+    },
+    {
+      "fieldName": "前郭1场生长场",
+      "offlineTime": "2020-08-20 18:41:25",
+      "fieldId": "15332516"
+    },
+    {
+      "fieldName": "繁峙11场",
+      "offlineTime": "2020-07-14 00:35:17",
+      "fieldId": "15335445"
+    },
+    {
+      "fieldName": "繁峙4场",
+      "offlineTime": "2020-04-30 11:13:57",
+      "fieldId": "15369439"
+    },
+    {
+      "fieldName": "宁陵13场2区",
+      "offlineTime": "2020-08-17 16:10:36",
+      "fieldId": "15369596"
+    },
+    {
+      "fieldName": "范县10场1区",
+      "offlineTime": "2020-07-25 09:25:23",
+      "fieldId": "15358564"
+    },
+    {
+      "fieldName": "颍上10场",
+      "offlineTime": "2020-06-11 14:35:17",
+      "fieldId": "15337165"
+    },
+    {
+      "fieldName": "颍上2场1区",
+      "offlineTime": "2020-05-28 00:35:25",
+      "fieldId": "15337167"
+    },
+    {
+      "fieldName": "颍上8场1区繁殖场",
+      "offlineTime": "2020-03-16 15:00:10",
+      "fieldId": "15386960"
+    },
+    {
+      "fieldName": "颍上8场1区生长场",
+      "offlineTime": "2020-07-06 01:50:24",
+      "fieldId": "15414076"
+    },
+    {
+      "fieldName": "昌图16厂生长厂",
+      "offlineTime": "2020-08-22 21:42:01",
+      "fieldId": "15416786"
+    },
+    {
+      "fieldName": "凤台2场1区",
+      "offlineTime": "2020-08-09 22:37:44",
+      "fieldId": "15339599"
+    },
+    {
+      "fieldName": "牡丹1场1、2区",
+      "offlineTime": "2020-08-21 19:16:52",
+      "fieldId": "15369161"
+    },
+    {
+      "fieldName": "石林1场",
+      "offlineTime": "2020-08-22 17:53:14",
+      "fieldId": "15390579"
+    },
+    {
+      "fieldName": "惠民3厂生长厂2区",
+      "offlineTime": "2020-04-16 17:10:06",
+      "fieldId": "15416663"
+    },
+    {
+      "fieldName": "惠民3厂生长厂3区",
+      "offlineTime": "2020-06-07 14:35:31",
+      "fieldId": "15416665"
+    },
+    {
+      "fieldName": "江陵1场繁殖场",
+      "offlineTime": "2020-05-25 19:20:21",
+      "fieldId": "15418329"
+    },
+    {
+      "fieldName": "海安1场生长场",
+      "offlineTime": "2020-05-25 10:00:27",
+      "fieldId": "15428663"
+    },
+    {
+      "fieldName": "镇平2场生长场",
+      "offlineTime": "2020-08-21 23:13:08",
+      "fieldId": "15431210"
+    }
+  ],
+  "rel": true
+}

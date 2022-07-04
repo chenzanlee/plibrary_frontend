@@ -1,0 +1,83 @@
+.el-table{
+  @include background_color('tableBackgroundColor');
+  @include border_all('tableBorderBottomColor');
+}
+.el-table--border::after,
+.el-table--group::after,
+.el-table::before {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+#app .el-table--fit, 
+.el-table--fit {
+  // border: 1px solid var(--el-table-border);
+  border-radius: 4px;
+}
+
+.el-table thead th {
+  @include background_color('tableBackgroundThColor');
+  @include font_color('tableFontColor');
+  border-bottom: 1px solid;
+  @include border_bottom('tableBorderBottomColor');
+}
+.el-table tbody tr {
+  @include background_color('tableBackgroundColor');
+}
+
+/**********************表格**************************/
+.el-table--scrollable-x .el-table__body-wrapper::-webkit-scrollbar,
+.is-scrolling-left::-webkit-scrollbar {
+  width: 4px;
+  height: 7px;
+}
+.el-table--scrollable-x .el-table__body-wrapper::-webkit-scrollbar-thumb,
+.is-scrolling-left::-webkit-scrollbar-thumb {
+  @include background('tabScrollColor');
+  border-radius: 2px;
+}
+.el-table--scrollable-x .el-table__body-wrapper::-webkit-scrollbar-track-piece,
+.is-scrolling-left::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+
+// /* #0C0F24;  #43619f;  */
+.el-table--scrollable-x,
+.el-table__body-wrapper,
+.is-scrolling-right {
+  background: rgba(0, 0, 0, 0);
+}
+.el-table__body tr > td {
+  @include font_color('tableFontColor');
+  border-bottom: 1px solid;
+  @include border_bottom('tableBorderBottomColor');
+}
+.el-table__body tr.current-row > td {
+  @include background_color('tableBackgroundActiveColor');
+}
+.el-table tbody tr.hover-row > td {
+  @include background_color('tableBackgroundHoverColor');
+}
+.el-table tbody .warning-row,
+.el-table--striped .el-table__body tr.el-table__row--striped td {
+  @include background_color('tableBackgroundHoverColor');
+}
+
+.el-table--scrollable-y .el-table__body-wrapper::-webkit-scrollbar {
+  display: none !important;
+  background-color: transparent !important;
+}
+.el-table--scrollable-y .el-table__body-wrapper::-webkit-scrollbar-thumb {
+  display: none;
+  height: 50px;
+  outline-offset: -2px;
+  outline: 2px solid #fff;
+  border-radius: 4px;
+  border: 2px solid #fff;
+}
+// .el-table--scrollable-y {
+//   @include background_color('tableBackgroundColor');
+// }
+.el-table td,
+.el-table th.is-leaf {
+  border-bottom: none;
+}

@@ -1,0 +1,32 @@
+/**
+ * 
+ * @file scss全局变量
+ * @author author-name(李红波 15537053107)
+ */
+
+// sidebar
+$menuText:#CDD8F7;
+// $menuActiveText:#00b0ff;
+$menuActiveText:#fff;
+$subMenuActiveText:#00b0ff; //https://github.com/ElemeFE/element/issues/12951
+
+$menuBg:#001D45;
+$menuHover:#034C90;
+
+$subMenuBg:#001D45;
+$subMenuHover:#034C90;
+
+$sideBarWidth: 260px;
+
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+}

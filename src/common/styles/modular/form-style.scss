@@ -1,0 +1,274 @@
+@import "@/style/_handle.scss";
+.nav-form input::-webkit-input-placeholder {
+  @include font_color('formPlaceholderColor');
+}
+.nav-form input:not(.el-select__input) { // 这里 select如果是多选的话，会把placeholder遮住
+  @include font_color('formColor');
+  font-size: var(--el-form-font-size);
+  font-weight: normal;
+  @include background_color('formBackgroundColor');
+}
+.nav-form .el-picker-panel__body .el-input__inner,
+.nav-form .el-input__inner,
+.el-input__inner,
+.el-picker-panel__footer {
+  @include background_color('formBackgroundColor');
+}
+.el-date-range-picker__content.is-left {
+  @include border_right_color('formDateTimeRightColor');
+}
+.el-time-spinner__item.active:not(.disabled){
+  @include font_color('formColor');
+}
+.nav-form .el-select .el-input .el-select__caret {
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  height: var(--el-form-item-height);
+}
+.nav-form .is-focus {
+  border-color: var(--el-form-border-hover);
+}
+.nav-form .el-icon-arrow-up:before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+// .nav-form .el-input--suffix{ // select 多选 时pla 会被遮盖
+//   z-index:1;
+// }
+// .nav-form .el-select__tags{
+//   z-index: 2;
+// }
+.el-switch .el-switch__core {
+  @include background_color("formSwitchBackgroundColor");
+  @include border_color("formSwitchBackgroundColor");
+}
+.el-switch.is-checked .el-switch__core {
+  background-color: #10AEFF !important;
+  border-color: #10AEFF !important;
+}
+
+.el-input-number__decrease{
+  // background-color: #162456;
+  @include background_color("equipTemNumberBorderGroundColor");
+  // border-left-color: #1a3166!important;
+  @include border_left_color("equipTemNumberBorderColor");
+  // border-bottom-color: #1a3166!important;
+  @include border_bottom_color("equipTemNumberBorderColor");
+  @include border_right_color("equipTemNumberBorderColor");
+}
+.el-input-number__increase{
+  // background-color: #162456;
+  @include background_color("equipTemNumberBorderGroundColor");
+  // border-left-color: #1a3166!important;
+  @include border_left_color("equipTemNumberBorderColor");
+  // border-bottom-color: #1a3166!important;
+  @include border_bottom_color("equipTemNumberBorderColor");
+}
+.el-icon-arrow-up, .el-icon-arrow-down {
+  @include font_color('equipTemNumberIconColor')
+}
+.el-input-number__decrease.is-disabled .el-icon-arrow-down:before{
+  @include font_color('equipTemNumberIconDisColor')
+}
+
+// 只控制 general-form数字框的控制按钮
+.general-form {
+  .el-input.is-disabled .el-input__inner:hover,
+  .el-input.is-disabled .el-input__inner,
+  .el-date-editor--daterange.is-disabled {
+    color: var(--gener-input-disable-font-color)!important;
+    @include background-color('formDisabledBackgroundColor');
+    @include border_color('formBorderColor');
+  }
+  .el-date-editor--daterange.is-disabled input {
+    background-color: transparent !important;
+    color: var(--gener-input-disable-font-color) !important;
+  }
+  input {
+    color: var(--el-form-font-color) !important;
+    font-size: var(--el-form-font-size);
+    font-weight: normal;
+    // @include background_color('formBackgroundColor');
+  }
+  .el-picker-panel__body .el-input__inner {
+    @include background_color('formBackgroundColor');
+  }
+  .el-input__inner {
+    @include background_color('formBackgroundColor');
+  }
+  .is-focus {
+    border-color: var(--el-form-border-hover);
+  }
+  .el-radio__label{
+    font-size: 14px;
+  }
+  .el-radio__input.is-checked .el-radio__inner{
+    border-color: var(--gener-radio-font-color);
+    background:var(--gener-radio-font-color);
+  }
+  .el-radio__input.is-checked+.el-radio__label{
+    color: var(--gener-radio-font-color);
+  }
+  .el-radio__input.is-disabled+span.el-radio__label{
+    color: var(--gener-radio-disable-font-color);
+  }
+  // -----
+  textarea::-webkit-input-placeholder,input::-webkit-input-placeholder {
+    // color: var(--el-placeholder-font-color) !important;
+    @include font_color('formPlaceholderColor');
+  }
+  textarea:disabled::-webkit-input-placeholder,input:disabled::-webkit-input-placeholder {
+    color: #adadad !important;
+  }
+  // input:not(:disabled) {
+  //   color: var(--el-form-font-color) !important;
+  //   font-size: var(--el-form-font-size);
+  //   font-weight: normal;
+  //   @include background_color('formBackgroundColor');
+  // }
+  .el-cascader{ // 某些 general-form内的 区域级联框会变成37px
+    height: 36px;
+  }
+  .el-radio__input.is-disabled.is-checked .el-radio__inner {
+      background-color: grey!important;
+      border-color: grey!important;
+  }
+  .el-textarea__inner, .el-input__inner{
+    font-size: var(--gener-form-item-size);
+    @include font_color('formColor');
+  }
+  .el-form-item{
+    margin-bottom: var(--el-from-item-marginBot-height);
+  }
+  .el-form-item__content{
+    height: var(--el-form-item-height);
+  }
+  label[for=file] + .el-form-item__content{ // 特殊处理---上传文件
+    height: auto;
+    min-height: var(--el-form-item-height);
+  }
+  // label[for=description] + .el-form-item__content{ // 特殊处理---textarea框
+  //   height: auto;
+  //   min-height: var(--el-form-item-height);
+  // }
+  .el-form-item__content .el-input__inner{
+    height: var(--el-form-item-height);
+    line-height: var(--el-form-item-height);
+  }
+  .el-input-number.is-controls-right{
+    .el-icon-arrow-up,
+    .el-icon-arrow-down {
+        color: #cdd8f7;
+    }
+    .el-input-number__increase{
+      top: 2px;
+    }
+    .el-input-number__increase{
+      line-height: 16px;
+      border-bottom: 1px solid;
+      border-left: 1px solid;
+      @include border_left_color('formBackgroundColor');
+      @include border_bottom_color('formBackgroundColor');
+      @include background('formBackgroundColor');
+      // top:1px;
+    }
+    .el-input-number__decrease{
+      line-height: 16px;
+      border-left: 1px solid;
+      @include border_left_color('formBackgroundColor');
+      @include background('formBackgroundColor');
+    }
+  }
+  .el-input-number.is-disabled.is-controls-right .el-input-number__decrease,
+  .el-input-number.is-disabled.is-controls-right .el-input-number__increase {
+    @include background('formDisabledBackgroundColor');
+    color:var(--el-form-back-color)!important;
+    border-color: transparent !important;
+  }
+}
+
+// dialog 的内容样式
+.el-dialog__body{ // dialog 的body 最大高度 132是body的上下padding + header高度 + foter的padding
+  max-height: calc(80vh - 132px);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 20px 30px!important;
+}
+
+/* 全局的 小三角颜色 */
+.el-popper[x-placement^=bottom] .popper__arrow{
+  // border-bottom-color: var(--el-cas-sel-icon-line-color);
+  @include border_bottom_color("selectDropdownBackgroundColor");
+}
+.el-popper[x-placement^=top] .popper__arrow{
+  // border-top-color: var(--el-cas-sel-icon-line-color);
+  @include border_top_color("selectDropdownBackgroundColor");
+}
+.el-popper[x-placement^='bottom'] .popper__arrow::after,
+.el-popper[x-placement^='top'] .popper__arrow::after {
+  // border-bottom-color: var(--el-cas-sel-icon-color);
+  @include border_bottom_color("selectDropdownBackgroundColor");
+  // border-top-color: var(--el-cas-sel-icon-color);
+  @include border_top_color("selectDropdownBackgroundColor");
+}
+.el-popper[x-placement^=bottom] .popper__arrow::after{
+  top:var(--el-cas-sel-icon-width);
+}
+
+// 区域级联框  和 select框 的箭头颜色
+.el-cascader .el-input .el-icon-arrow-down,.el-select .el-input .el-select__caret{
+  color: var(--el-cas-sel-in-arrow-color);
+}
+// 区域级联框 的背景颜色
+.el-cascader-menu__wrap {
+  @include background_color('selectDropdownBackgroundColor');
+}
+// 区域级联框 的分割线颜色
+.el-cascader-menu {
+  border-right: 1px solid;
+  @include border_right_color('selectDropdownBackgroundColor');
+}
+.el-cascader-panel .el-cascader-node__label,
+.el-cascader-panel .el-icon-arrow-right,
+.el-select-dropdown__item,
+.el-dropdown-menu__item {
+  font-size: var(--el-cas-sel-font-size);
+  @include font_color('selectDropdownFontColor');
+}
+.el-dropdown-menu__item:hover,
+.el-dropdown-menu__item.systemColorActive,
+.el-dropdown-menu__item:not(.is-disabled):hover {
+  @include background_color("selectDropdownHoverColor");
+  color: #fff !important;
+}
+.el-select-dropdown__item.selected,
+.el-select-dropdown__item.hover {
+  color: #fff !important;
+}
+.el-cascader-node:not(.is-disabled):focus, .el-cascader-node:not(.is-disabled):hover{
+  color: #fff !important;
+  @include background_color('selectDropdownHoverColor');
+}
+.el-cascader-menu__wrap {
+  height: auto;
+  max-height: 204px;
+  .el-cascader-menu__list.is-empty{
+    height: 204px;
+  }
+}
+
+// form元素 高度
+.el-form-item__label {
+  height: var(--el-form-item-height);
+  line-height: var(--el-form-item-height);
+  @include font_color('formColor');
+  font-size: 12px;
+  font-weight: normal;
+  font-family: SourceHanSansCN-Normal;
+}
+// nav-form 组件内的行高
+.el-form-item__content{
+  line-height: var(--el-form-item-height);
+}

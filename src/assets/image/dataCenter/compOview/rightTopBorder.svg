@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>路径</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页大屏" transform="translate(-592.000000, -126.000000)" fill="#03B9CC" fill-rule="nonzero">
+            <path d="M609,126 C609.552285,126 610,126.447715 610,127 C610,127.512836 609.61396,127.935507 609.116621,127.993272 L609,128 L594,128 L594,143 C594,143.512836 593.61396,143.935507 593.116621,143.993272 L593,144 C592.487164,144 592.064493,143.61396 592.006728,143.116621 L592,143 L592,126 L609,126 Z" id="路径" transform="translate(601.000000, 135.000000) scale(-1, 1) translate(-601.000000, -135.000000) "></path>
+        </g>
+    </g>
+</svg>

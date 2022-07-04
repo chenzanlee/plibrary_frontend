@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="14px" viewBox="0 0 10 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>手机</title>
+    <desc>Created with Sketch.</desc>
+    <g id="基础信息维护" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="推送目标维护备份" transform="translate(-1283.000000, -230.000000)" fill="#CDD8F7" fill-rule="nonzero">
+            <g id="编组-12" transform="translate(1283.000000, 230.000000)">
+                <path d="M9,0 L1,0 C0.447000008,0 0,0.391176475 0,0.87458823 L0,13.1254118 C0,13.6088235 0.447000008,14 1,14 L9,14 C9.55199998,14 10,13.608 10,13.1254118 L10,0.87458823 C10,0.391176475 9.552,0 9,0 Z M5,13.3 C4.44771525,13.3 4,12.8522847 4,12.3 C4,11.7477153 4.44771525,11.3 5,11.3 C5.55228475,11.3 6,11.7477153 6,12.3 C6,12.8522847 5.55228475,13.3 5,13.3 Z M9.00000001,10.7058824 L1.00000001,10.7058824 L1.00000001,1.64705882 L9.00000001,1.64705882 L9.00000001,10.7058824 Z" id="手机"></path>
+            </g>
+        </g>
+    </g>
+</svg>

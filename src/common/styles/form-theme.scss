@@ -1,0 +1,240 @@
+.general-form,
+.nav-form {
+  .nav-form-btn {
+    font-size: 14px;
+    // TODO：修复全局按钮输入框高度不一致
+    padding: 8px 20px !important;
+  }
+  .el-cascader .el-input {
+    font-size: 12px;
+  }
+  .el-input__inner,
+  .el-textarea__inner,
+  .el-input--suffix {
+    height: 36px;
+    line-height: 36px;
+  }
+  .el-cascader {
+    line-height: 36px;
+  }
+  .el-date-editor.el-input {
+    width: 100%;
+  }
+  .el-date-editor--daterange.el-input__inner {
+    width: 100%;
+  }
+  .el-date-editor{
+    i,
+    .el-range-separator{
+      line-height: var(--el-time-line-height);
+    }
+  }
+}
+.nav-form {
+  .inp-group {
+    min-height: 36px;
+    line-height: 36px;
+    .el-button {
+      margin-right: 0px;
+    }
+  }
+  .el-form-item {
+    margin-right: 10px;
+  }
+  .el-form-item__label {
+    color: #fff;
+    font-size: 12px;
+  }
+  .el-button {
+    padding: 10px 20px;
+    + .el-button {
+      margin-left: 0!important;
+    }
+  }
+}
+.btn-blank {
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  font-weight: normal;
+  background-image: linear-gradient(
+    180deg,
+    rgb(19, 68, 148) 0%,
+    rgba(20, 71, 151, 1) 100%
+  );
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  border-image: -webkit-linear-gradient(#cdd8f7, #6f83b9) 5 5;
+  border-image: -moz-linear-gradient(#cdd8f7, #6f83b9) 5 5;
+  border-image: -o-linear-gradient(#cdd8f7, #6f83b9) 5 5;
+  border-image: linear-gradient(#cdd8f7, #6f83b9) 5 5;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.default,
+.nav-form,
+.inputNumber {
+  .el-input__count,
+  .el-picker-panel,
+  .el-range-input {
+    @include background('formBackgroundColor');
+    @include font_color('formColor');
+  }
+  .el-range-separator {
+    @include font_color('formColor');
+  }
+  // }
+
+  .el-input__inner,
+  .el-textarea__inner {
+    height: 36px;
+    @include font_color('formColor');
+    line-height: 36px;
+    @include background('formBackgroundColor');
+    @include border_color('formBorderColor');
+    @include background_color("mainInputBackGroundColor");
+    border-radius: 2px;
+  }
+  .el-select:hover .el-input__inner {
+    // border-color: #1a3166;
+    @include border_color('formBorderColor');
+  }
+}
+.inputNumber5 {
+  width: calc(20% - 23px);
+  margin-right: 10px;
+  height: 29px;
+  .el-input__count,
+  .el-picker-panel,
+  .el-range-input {
+    @include background('formBackgroundColor');
+    @include font_color('formColor');
+  }
+  .el-range-separator {
+    @include font_color('formColor');
+  }
+  .el-input__inner,
+  .el-textarea__inner {
+    height: 29px;
+    // width: 100px;
+    @include font_color('formColor');
+    line-height: 29px;
+    @include background_color("mainInputBackGroundColor");
+    // background: #162456;
+    @include border_color('formBorderColor');
+    border-radius: 2px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+.inputNumberMini {
+  width: calc(25% - 23px);
+  margin-right: 10px;
+  height: 29px;
+  .el-input__count,
+  .el-picker-panel,
+  .el-range-input {
+    @include background('formBackgroundColor');
+    @include font_color('formColor');
+  }
+  .el-range-separator {
+    @include font_color('formColor');
+  }
+  .el-input__inner,
+  .el-textarea__inner {
+    height: 29px;
+    // width: 100px;
+    @include font_color('formColor');
+    line-height: 29px;
+    @include background_color("mainInputBackGroundColor");
+    @include border_color('formBorderColor');
+    border-radius: 2px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+.inputNumberSmall {
+  width: calc(33% - 26px);
+  height: 29px;
+  margin-right: 10px;
+  text-align: center;
+  .el-input__count,
+  .el-picker-panel,
+  .el-range-input {
+    @include background('formBackgroundColor');
+    @include font_color('formColor');
+  }
+  .el-range-separator {
+    @include font_color('formColor');
+  }
+  .el-input__inner,
+  .el-textarea__inner {
+    height: 29px;
+    // width: 120px;
+    @include font_color('formColor');
+    line-height: 29px;
+    @include background_color("mainInputBackGroundColor");
+    @include border_color('formBorderColor');
+    border-radius: 2px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+.inputNumberMedium {
+  width: calc(50% - 51px);
+  height: 29px;
+  margin-right: 10px;
+  .el-input__count,
+  .el-picker-panel,
+  .el-range-input {
+    @include background('formBackgroundColor');
+    @include font_color('formColor');
+  }
+  .el-range-separator {
+    @include font_color('formColor');
+  }
+  .el-input__inner,
+  .el-textarea__inner {
+    height: 29px;
+    // width: 220px;
+    @include font_color('formColor');
+    line-height: 29px;
+    @include background_color("mainInputBackGroundColor");
+    @include border_color('formBorderColor');
+    border-radius: 2px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+.inputNumberBig {
+  width: calc(100% - 70px);
+  height: 29px;
+  margin-top: 10px;
+  margin-left: 35px;
+  .el-input__count,
+  .el-picker-panel,
+  .el-range-input {
+    @include background('formBackgroundColor');
+    @include font_color('formColor');
+  }
+  .el-range-separator {
+    @include font_color('formColor');
+  }
+  .el-input__inner,
+  .el-textarea__inner {
+    height: 29px;
+    width: 100%;
+    @include font_color('formColor');
+    line-height: 29px;
+    @include background_color("mainInputBackGroundColor");
+    @include border_color('formBorderColor');
+    border-radius: 2px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+}
+.inputMini .el-form-item__content {
+  display: flex;
+}

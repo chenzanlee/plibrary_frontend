@@ -1,0 +1,221 @@
+{
+  "status": 200,
+  "message": null,
+  "data": {
+    "onlineFieldNum": 456,
+    "series": [
+      {
+        "areaCode": "10",
+        "areaName": "西北",
+        "totalNum": 1722,
+        "onlineNum": 1419,
+        "onlineRate": 0.824
+      },
+      {
+        "areaCode": "11",
+        "areaName": "黑龙江",
+        "totalNum": 1308,
+        "onlineNum": 1141,
+        "onlineRate": 0.872
+      },
+      {
+        "areaCode": "12",
+        "areaName": "吉林",
+        "totalNum": 979,
+        "onlineNum": 623,
+        "onlineRate": 0.636
+      },
+      {
+        "areaCode": "13",
+        "areaName": "辽宁",
+        "totalNum": 1481,
+        "onlineNum": 1292,
+        "onlineRate": 0.872
+      },
+      {
+        "areaCode": "14",
+        "areaName": "内蒙古",
+        "totalNum": 1086,
+        "onlineNum": 976,
+        "onlineRate": 0.899
+      },
+      {
+        "areaCode": "15",
+        "areaName": "京津冀",
+        "totalNum": 1702,
+        "onlineNum": 1431,
+        "onlineRate": 0.841
+      },
+      {
+        "areaCode": "16",
+        "areaName": "豫北",
+        "totalNum": 1469,
+        "onlineNum": 1266,
+        "onlineRate": 0.862
+      },
+      {
+        "areaCode": "2",
+        "areaName": "南阳",
+        "totalNum": 1860,
+        "onlineNum": 1375,
+        "onlineRate": 0.739
+      },
+      {
+        "areaCode": "20",
+        "areaName": "广西",
+        "totalNum": 59,
+        "onlineNum": 39,
+        "onlineRate": 0.661
+      },
+      {
+        "areaCode": "29",
+        "areaName": "云南",
+        "totalNum": 59,
+        "onlineNum": 0,
+        "onlineRate": 0.0
+      },
+      {
+        "areaCode": "3",
+        "areaName": "豫东",
+        "totalNum": 3522,
+        "onlineNum": 3003,
+        "onlineRate": 0.853
+      },
+      {
+        "areaCode": "4",
+        "areaName": "豫东南",
+        "totalNum": 1775,
+        "onlineNum": 1513,
+        "onlineRate": 0.852
+      },
+      {
+        "areaCode": "5",
+        "areaName": "安徽",
+        "totalNum": 3022,
+        "onlineNum": 2243,
+        "onlineRate": 0.742
+      },
+      {
+        "areaCode": "6",
+        "areaName": "江苏",
+        "totalNum": 1342,
+        "onlineNum": 1072,
+        "onlineRate": 0.799
+      },
+      {
+        "areaCode": "7",
+        "areaName": "湖北",
+        "totalNum": 681,
+        "onlineNum": 586,
+        "onlineRate": 0.86
+      },
+      {
+        "areaCode": "9",
+        "areaName": "山东",
+        "totalNum": 3424,
+        "onlineNum": 2583,
+        "onlineRate": 0.754
+      },
+      {
+        "areaCode": "22",
+        "areaName": "海南",
+        "totalNum": 0,
+        "onlineNum": 0,
+        "onlineRate": 0.0
+      },
+      {
+        "areaCode": "27",
+        "areaName": "陕西",
+        "totalNum": 0,
+        "onlineNum": 0,
+        "onlineRate": 0.0
+      },
+      {
+        "areaCode": "30",
+        "areaName": "浙江",
+        "totalNum": 0,
+        "onlineNum": 0,
+        "onlineRate": 0.0
+      },
+      {
+        "areaCode": "26",
+        "areaName": "山西",
+        "totalNum": 0,
+        "onlineNum": 0,
+        "onlineRate": 0.0
+      },
+      {
+        "areaCode": "23",
+        "areaName": "湖南",
+        "totalNum": 0,
+        "onlineNum": 0,
+        "onlineRate": 0.0
+      },
+      {
+        "areaCode": "21",
+        "areaName": "贵州",
+        "totalNum": 0,
+        "onlineNum": 0,
+        "onlineRate": 0.0
+      },
+      {
+        "areaCode": "33",
+        "areaName": "其他",
+        "totalNum": 0,
+        "onlineNum": 0,
+        "onlineRate": 0.0
+      },
+      {
+        "areaCode": "24",
+        "areaName": "江西",
+        "totalNum": 0,
+        "onlineNum": 0,
+        "onlineRate": 0.0
+      },
+      {
+        "areaCode": "19",
+        "areaName": "广东",
+        "totalNum": 0,
+        "onlineNum": 0,
+        "onlineRate": 0.0
+      }
+    ],
+    "plc": {
+      "totalNum": 18674,
+      "bindedNum": 584,
+      "onlineNum": 17692,
+      "offlineNum": 459,
+      "troubleNum": 31,
+      "warnNum": 27,
+      "areaCode": "-1",
+      "areaName": null,
+      "parentId": null
+    },
+    "bindedNum": 25976,
+    "onlineNum": 15175,
+    "onlineRate": 0.584,
+    "huaCheng": {
+      "totalNum": 35716,
+      "bindedNum": 489,
+      "onlineNum": 34864,
+      "offlineNum": 112,
+      "troubleNum": 29,
+      "warnNum": 37,
+      "areaCode": "-1",
+      "areaName": null,
+      "parentId": null
+    },
+    "ziYan": {
+      "totalNum": 81792,
+      "bindedNum": 24437,
+      "onlineNum": 54531,
+      "offlineNum": 4374,
+      "troubleNum": 1676,
+      "warnNum": 1763,
+      "areaCode": "-1",
+      "areaName": null,
+      "parentId": null
+    }
+  },
+  "rel": true
+}

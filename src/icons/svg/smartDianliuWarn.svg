@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 32备份 2</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="场区设备概览-实时数据备份" transform="translate(-1060.000000, -681.000000)">
+            <g id="编组-13" transform="translate(240.000000, 361.000000)">
+                <g id="编组-6备份-22" transform="translate(800.000000, 300.000000)">
+                    <g id="编组-32备份-2" transform="translate(20.000000, 20.000000)">
+                        <circle id="椭圆形" stroke="#F7B500" stroke-width="2" cx="20" cy="20" r="19"></circle>
+                        <path d="M14.3710938,28 L16.2578125,22.796875 L23.4414062,22.796875 L25.4453125,28 L28.0351562,28 L21.0039062,10.8203125 L18.5546875,10.8203125 L11.9570312,28 L14.3710938,28 Z M22.7382812,20.9453125 L16.9140625,20.9453125 L18.8007812,15.90625 C19.1992188,14.8203125 19.5078125,13.7265625 19.7265625,12.625 C19.9921875,13.5546875 20.3984375,14.7421875 20.9453125,16.1875 L20.9453125,16.1875 L22.7382812,20.9453125 Z" id="A" fill="#F7B500" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

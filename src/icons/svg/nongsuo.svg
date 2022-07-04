@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="88px" viewBox="0 0 88 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 14备份 3</title>
+    <defs>
+        <circle id="path-1" cx="44.5" cy="44.5" r="39.5"></circle>
+        <filter x="-3.8%" y="-3.8%" width="107.6%" height="107.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="3" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.062745098   0 0 0 0 0.156470588   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <circle id="path-3" cx="44" cy="44" r="44"></circle>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="88" height="88" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="除臭墙" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="设备运行状态备份-2" transform="translate(-269.000000, -708.000000)">
+            <g id="编组-14备份-3" transform="translate(269.000000, 708.000000)">
+                <g id="椭圆形">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <circle stroke="#1990FF" stroke-width="1" stroke-linejoin="square" cx="44.5" cy="44.5" r="39"></circle>
+                </g>
+                <g id="qiti" transform="translate(25.000000, 24.000000)" fill="#1990FF" fill-rule="nonzero">
+                    <path d="M8.00020643,17.9999226 C12.42504,17.9999226 16.0004129,21.5748255 16.0004129,26.0002322 C16.0004129,30.425639 12.4255561,34.0005419 8.00020643,34.0005419 C3.57485679,34.0005419 0,30.425639 0,26.0002322 C0,21.5748255 3.57485679,17.9999226 8.00020643,17.9999226 M27.0000516,30.0003871 C29.761573,30.0003871 31.9997936,32.2391526 31.9997936,35.0001935 C31.9997936,37.7612345 29.7610569,40 27.0000516,40 C24.2390463,40 22.0003096,37.7612345 22.0003096,35.0001935 C22.0003096,32.2391526 24.2385302,30.0003871 27.0000516,30.0003871 M28.0002064,0 C34.6276513,0 40,5.37241798 40,11.9999484 C40,18.6248984 34.625071,23.9998968 28.0002064,23.9998968 C21.3727615,23.9998968 16.0004129,18.6274788 16.0004129,11.9999484 C15.9998968,5.37499839 21.3748258,0 28.0002064,0 Z" id="形状"></path>
+                </g>
+                <use id="椭圆形备份-2" stroke="#1990FF" mask="url(#mask-4)" stroke-width="2" stroke-dasharray="2" xlink:href="#path-3"></use>
+            </g>
+        </g>
+    </g>
+</svg>

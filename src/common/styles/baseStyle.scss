@@ -1,0 +1,22 @@
+
+.m-r-10{ margin-right: 10px; }
+.m-l-10{ margin-left: 10px; }
+.m-t-20{ margin-bottom: 20px; }
+.m-l-0{ margin-left: 0; }
+.m-r-0{ margin-right: 0; }
+.p-t-20{ padding-bottom: 20px; }
+.p-l-0{ padding-left: 0; }
+.p-r-0{ padding-right: 0; }
+.font-s-24{ font-size: 24px; }
+.align-center{ text-align: center; }
+.modularColor{ @include font_color('mainBorderColor18'); }
+.gray{ @include font_color('mainFontColorseeThink'); }
+.font-w-500{ font-weight: 500; }
+.font-w-400{ font-weight: 400; }
+.font-w-blod{ font-weight: bold; }
+.text-one-ellipsis{ display: inline-block; white-space: nowrap; text-overflow: ellipsis;overflow: hidden;word-break: break-all; }
+.ver-align-top{ vertical-align: top; }
+.width-001{ width: 100%; }
+.overflow-hidden{ overflow: hidden; }
+.shadowHighlight{ @include box_shadow('spBoxShadow1'); }
+// .bgHighlight{ background: linear-gradient(360deg,rgba(51,94,255,0.65), rgba(34,68,195,0.00) 87%);}

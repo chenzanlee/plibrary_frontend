@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>形状结合</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.000000 0 0 0 0 0.564706 0 0 0 0 0.905882 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <linearGradient x1="5.11244889%" y1="50%" x2="98.4567328%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#005CD9" offset="0%"></stop>
+            <stop stop-color="#00CFE6" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="集团数据" transform="translate(-301.000000, -94.000000)">
+            <g id="编组备份-5" transform="translate(281.000000, 74.000000)" filter="url(#filter-1)">
+                <g transform="translate(20.000000, 20.000000)">
+                    <path d="M6.70755556,1.25777778 L6.70755556,8.60888889 C6.70731961,8.78679684 6.77782793,8.95749893 6.90354456,9.08338229 C7.02926119,9.20926566 7.19986968,9.28000016 7.37777778,9.28 L7.37777778,9.28 L14.7111111,9.28 C14.3733333,13.0435556 11.2195556,15.9928889 7.37777778,15.9928889 C3.30844445,15.9928889 0.0106666719,12.6871111 0.0106666719,8.60888889 C0.0106666719,4.75822222 2.95466667,1.59822222 6.70755556,1.25777778 L6.70755556,1.25777778 Z M8.03111111,0.0106666719 C12.2524445,0.392888891 15.6106667,3.76 15.9928889,7.99288889 L15.9928889,7.99288889 L8.03111111,7.99288889 Z" id="形状结合" fill="url(#linearGradient-2)" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

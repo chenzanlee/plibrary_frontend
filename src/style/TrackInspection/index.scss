@@ -1,0 +1,171 @@
+@import "../_handle.scss";
+
+@mixin PaddingTop($num) {
+  @include themeify {
+    padding-top: themed($num) !important;
+  }
+}
+@mixin PaddingLeft($num) {
+  @include themeify {
+    padding-left: themed($num) !important;
+  }
+}
+
+
+.font_Color {
+  @include font_color('titFontcolor');
+
+}
+
+.hj-box {
+  @include background_image('hjbox');
+
+}
+
+.oh-nh {
+  p {
+    @include font_color('titFontcolor');
+  }
+}
+
+// .surroundings {
+  .lanwei-insert {
+    @include background('lanweiInsertBackground');
+    @include border_color('lanweiInsertBorder');
+  }
+// }
+
+.lanwei-title {
+  @include font_color('titFontcolor');
+}
+
+.ai-desc-box,
+.no-record,
+.lanwei-box,
+.cloudBox {
+  @include background('aidescBox');
+}
+
+.ai-text,
+.no-record,
+.no-has-lanwei,
+.control-title,
+.lanwei-select {
+  @include font_color('aiTextColor');
+}
+
+.dynamic,
+.boxUnitPatrol {
+  @include background('lanweiInsertBackground');
+  @include border_color('lanweiInsertBorder');
+
+}
+
+.is-active {
+  @include font_color('dynamictitFontcoloractive');
+}
+
+.cloudBox,
+.lanwei-box {
+  @include border_color('lanweiInsertBorder');
+}
+
+// 、、视频播放
+.is-mixin-box {
+  &::before {
+    @include background_image("highlightbeforebgimg");
+  }
+
+  &::after {
+    @include box_shadow("highlightaftershadow");
+    @include border_color("mixinboxafterbordercolor");
+  }
+}
+
+.control .content .switch>div>p,
+.control .right .zoom>p {
+  @include font_color('formColor');
+}
+.switchColor, .mainTit, .colorTitle p {
+  @include font_color('switchColor');
+}
+.err-text {
+  @include font_color('formColor');
+}
+.status_item {
+  @include background('control_pBackgroundColor');
+  .title {
+    @include background('status_itemtitlebg');
+    @include font_color('formColor');
+  }
+}
+
+.control_zoomp {
+  @include background_image('controlZoomp');
+  @include box_shadow("highlightaftershadow");
+
+  i,
+  .text {
+    @include font_color('control_zoomifontcolor');
+  }
+
+  &:hover {
+    @include background('control_pBackgroundColor');
+  }
+}
+
+.topRadios {
+  @include background('topRadiosbgcolor');
+}
+.bgCont {
+  @include background('inPigBackGroundColor8');
+}
+.carStatusBg {
+  border: 1px solid #ddd;
+  @include border_color("formPlaceholderColor");
+  @include font_color("switchColor");
+  @include background("carStatusBginput");
+  outline: none !important;
+}
+
+// .paddingTop {
+//   @include PaddingTop('paddingTopTrack');
+// }
+// .paddingLeft {
+//   @include PaddingLeft('paddingTopTrack');
+// }
+.styCondition,.unitCondition {
+  @include border_color("formPlaceholderColor");
+}
+.mapIconbg {
+  @include background("mapIconbg");
+}
+.topLi:nth-child(1)>.topLiCon>.mapIconbg{
+  border:2px solid #0B477D;
+  @include border_color("mapIconbg1");
+}
+.topLi:nth-child(2)>.topLiCon>.mapIconbg{
+  border:2px solid #0B595D;
+  @include border_color("mapIconbg2");
+}
+.topLi:nth-child(3)>.topLiCon>.mapIconbg{
+  border:2px solid #0B5276;
+  @include border_color("mapIconbg3");
+}
+.topLi:nth-child(4)>.topLiCon>.mapIconbg{
+  border:2px solid #6a81c1;
+  @include border_color("mapIconbg4");
+}
+.topLi:nth-child(5)>.topLiCon>.mapIconbg{
+  border:2px solid #505C58;
+  @include border_color("mapIconbg5");
+}
+// .contrast 
+.el-tag.el-tag--info {
+  @include background("eltaginfoT");
+  border: none !important;
+  @include font_color("contrasteltaginfo");
+}
+.v-con-m-control {
+  @include background("vconContoal");
+}

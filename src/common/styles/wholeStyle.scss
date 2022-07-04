@@ -1,0 +1,45 @@
+@import "@/style/_handle.scss";
+.app-main {
+  /* 50= navbar  50  */
+  height: calc(100% - 23px);
+  min-height: calc(100vh - 134px);
+  width: 100%;
+  position: relative;
+  overflow-y: scroll;
+}
+.app-main-noBreadcrumb {
+  /* 50= navbar  50  */
+  height: calc(100% + 11px);
+}
+.app-main::-webkit-scrollbar{
+    display: none;
+}
+
+// fix css style bug in open el-dialog
+.el-popup-parent--hidden {
+  .fixed-header {
+    padding-right: 15px;
+  }
+}
+
+//面包屑
+.el-breadcrumb {
+  font-size: 14px;
+  margin-bottom: 20px;
+  .el-breadcrumb__inner {
+    a {
+      @include font_color('breadcrumbFontColor');
+      cursor: default;
+      font-weight: normal;
+    }
+  }
+  .no-redirect {
+    @include font_color('breadcrumbActiveFontColor');
+    cursor: default;
+  }
+}
+
+// 地图上面浮的 文字颜色
+.map .mapTitle{
+  @include font_color('mapTitleColor');
+}

@@ -1,0 +1,268 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 2021705 */
+  src: url('//at.alicdn.com/t/font_2021705_iloa3ty7ll9.eot');
+  src: url('//at.alicdn.com/t/font_2021705_iloa3ty7ll9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_2021705_iloa3ty7ll9.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_2021705_iloa3ty7ll9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_2021705_iloa3ty7ll9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_2021705_iloa3ty7ll9.svg#iconfont') format('svg');
+}
+@import "@/style/_handle.scss";
+.iconfont {
+  font-family: 'iconfont' !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased; /*字体清除锯齿效果*/
+  -webkit-text-stroke-width: 0.2px; /*文本外边框大小*/
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input::-webkit-input-placeholder,
+.inputShadow::-webkit-input-placeholder,
+.inputStyle::-webkit-input-placeholder {
+  @include font_color('formPlaceholderColor');
+}
+/**************************************************************************************************************/
+//  滚动条样式
+// ::-webkit-scrollbar 滚动条整体部分
+// ::-webkit-scrollbar-thumb  滚动条里面的小方块，能向上向下移动（或往左往右移动，取决于是垂直滚动条还是水平滚动条）
+// ::-webkit-scrollbar-track  滚动条的轨道（里面装有Thumb）
+// ::-webkit-scrollbar-button 滚动条的轨道的两端按钮，允许通过点击微调小方块的位置。
+// ::-webkit-scrollbar-track-piece 内层轨道，滚动条中间部分（除去）
+// ::-webkit-scrollbar-corner 边角，即两个滚动条的交汇处
+// ::-webkit-resizer 两个滚动条的交汇处上用于通过拖动调整元素大小的小控件
+.overfolw::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+.overfolw::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 2px;
+}
+.overfolw::-webkit-scrollbar-thumb {
+  // background: var(--el-table-scrollable-x) !important;
+  @include background_color("overfolw_scrollbar");
+  border-radius: 2px;
+}
+/*.overfolw::-webkit-scrollbar-thumb:hover{
+    background: #333;
+}
+.overfolw::-webkit-scrollbar-corner{
+    background: #179a16;
+}*/
+
+.export-img-box {
+  padding-right: 20px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/********************消息提示框**********************/
+.el-message,
+.el-message--error,
+.el-message--warning,
+.el-message--success {
+  min-width: 100px;
+  @include background_color('messageBackgroundColor');
+  border-color: transparent;
+}
+.el-message__content {
+  font-family: SourceHanSansCN-Medium;
+  font-size: 16px;
+}
+
+/**********************************************弹框****************************************************************/
+.dialog {
+  // color: #ebeef5;
+  @include font-color('mainFontColor12');
+  position: fixed;
+  z-index: 999;
+}
+.dialog-head {
+  // border-bottom: 1px solid #1a3166;
+  border-bottom: 1px solid;
+  @include border_bottom_color('mainDialogBorderBottomColor');
+  padding: 0 10px 4px 10px;
+}
+.dialog-head-close {
+  float: right;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.dialog-head-close:hover {
+  opacity: 1;
+}
+.dialog-foot {
+  text-align: right;
+  margin: 0 20px;
+  margin-bottom: 15px;
+}
+.dialog-body {
+  display: inline-block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+.dialog-close {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+}
+.common-container-carrier-nav {
+  margin: 0 20px;
+}
+.dialog-block {
+  animation: block 300ms forwards;
+}
+.dialog-hidden {
+  animation: hidden 300ms forwards;
+}
+@keyframes block {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes hidden {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.inputShadow {
+  background: #00113a;
+  border: 1px solid #00113a;
+  color: #fff;
+  box-shadow: inset 0 0 6px 0 #217bfc;
+  border-radius: 4px;
+  outline: none;
+  padding: 0 15px;
+  transition: all 0.3s;
+}
+.inputShadow:hover,
+.inputShadow:focus {
+  border: 1px solid #409eff;
+  transition: all 0.3s;
+}
+.buttons {
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 4px;
+}
+
+.inputShadow {
+  box-shadow: inset 0 0 6px 0 #217bfc;
+}
+.inputStyle {
+  background: #00113a;
+  color: #fff;
+  border: 1px solid #16306a;
+  border-radius: 2px;
+  outline: none;
+  padding: 0 15px;
+  transition: all 0.3s;
+}
+.inputStyle:hover,
+.inputStyle:focus {
+  border: 1px solid #294fa7;
+  transition: all 0.3s;
+}
+.buttons {
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 3px;
+}
+
+
+.no-data-img{
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+.no-data-img img{
+  // width: 300px; 
+  margin: 0 auto;
+  max-width: 300px;
+}
+.el-button.is-disabled.is-plain,
+.el-button.is-disabled.is-plain:focus,
+.el-button.is-disabled.is-plain:hover,
+.el-picker-panel__footer .is-plain {
+  border-color: #00123a;
+}
+.go-back-btn{
+  margin-right: 10px;
+  height: 30px;
+  padding: 0 15px;
+  i{
+    position: relative;
+    top: 1px;
+  }
+}
+
+.none{
+  display: none;
+}
+// 日期框 大小
+.general-form .el-date-editor--daterange.el-input__inner, 
+.nav-form .el-date-editor--daterange.el-input__inner{
+  width: 300px;
+}
+.dataCenterIconTips{
+  font-size: 12px !important;
+}
+
+// 数据中心面包屑
+.data-center-breadcrumb{
+  font-size: 14px;
+  color: var(--el-breadcrumb-active);
+  @include font_color('breadcrumbActiveFontColor');
+  cursor: default;
+  height: 14px;
+  margin-bottom: 20px;
+}
+
+// 饲喂详情页样式
+.feed-scheduling-detail{
+  height: calc(100vh - 180px);
+  .scheduling-detail-main{
+    height: calc(100% - 90px);
+    overflow-y: auto;
+    padding: 20px 30px 0;
+    margin: -20px -10px 0;
+    .table-title{
+      line-height: 30px;
+      padding: 15px 0;
+      border-top: 1px solid; 
+      @include border_top_color("scheduling_detail_main_title");
+      &>span{
+        font-size: 14px;
+        color: #cdd8f7;
+        margin-right: 20px;
+      }
+    }
+  }
+  .btn-group-bottom{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 20px 30px;
+    text-align: right;
+  }
+}

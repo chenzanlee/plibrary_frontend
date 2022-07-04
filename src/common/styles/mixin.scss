@@ -1,0 +1,103 @@
+/**
+ * 
+ * @file scss 公共mixin
+ * @author author-name(李红波 15537053107)
+ */
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin title {
+  .title{
+    padding: 4px;
+    background: #ffffff;
+    position: absolute;
+    top: -12px;
+    font-size: 16px;
+    color: $title;
+  }
+}
+
+@mixin scrollBar {
+  &::-webkit-scrollbar-track-piece {
+    background: transparent;
+  }
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #99a9bf;
+    border-radius: 20px;
+  }
+}
+
+@mixin relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin pct($pct) {
+  width: #{$pct};
+  position: relative;
+  margin: 0 auto;
+}
+
+@mixin triangle($width, $height, $color, $direction) {
+  $width: $width/2;
+  $color-border-style: $height solid $color;
+  $transparent-border-style: $width solid transparent;
+  height: 0;
+  width: 0;
+  @if $direction==up {
+    border-bottom: $color-border-style;
+    border-left: $transparent-border-style;
+    border-right: $transparent-border-style;
+  }
+  @else if $direction==right {
+    border-left: $color-border-style;
+    border-top: $transparent-border-style;
+    border-bottom: $transparent-border-style;
+  }
+  @else if $direction==down {
+    border-top: $color-border-style;
+    border-left: $transparent-border-style;
+    border-right: $transparent-border-style;
+  }
+  @else if $direction==left {
+    border-right: $color-border-style;
+    border-top: $transparent-border-style;
+    border-bottom: $transparent-border-style;
+  }
+}
+@mixin dropdownList{
+  height: 400px;
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 10px 20px;
+}
+@mixin flex($direction,$align){
+  display:flex;
+  flex-direction: $direction;
+  align-items: $align;
+}
+@mixin basic-info{
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    .title {
+      color: #409eff;
+      background: #fff;
+      padding: 0 10px;
+      position: absolute;
+      top: -10px;
+      left: 10px;
+    }
+}

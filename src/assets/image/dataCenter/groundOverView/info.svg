@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="83px" height="83px" viewBox="0 0 83 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>形状</title>
+    <defs>
+        <linearGradient x1="100%" y1="9.5%" x2="0%" y2="90.5%" id="linearGradient-1">
+            <stop stop-color="#A8F4FF" offset="0%"></stop>
+            <stop stop-color="#00A4FF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M34,22 L34,31 L38,31 L38,38 L40,38 L40,40 L20,40 L20,38 L21,38 L21,28 L25,28 L25,22 L34,22 Z M25,30 L23,30 L23,38 L25,38 L25,30 Z M32,24 L27,24 L27,38 L32,38 L32,24 Z M36,33 L34,33 L34,38 L36,38 L36,33 Z M31,34 L31,36 L28,36 L28,34 L31,34 Z M31,30 L31,32 L28,32 L28,30 L31,30 Z M31,26 L31,28 L28,28 L28,26 L31,26 Z" id="path-2"></path>
+        <filter x="-230.0%" y="-366.7%" width="660.0%" height="722.2%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="10" dy="-10" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="17" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0247206595   0 0 0 0 0.0614244116   0 0 0 0 0.3534024  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="场区-非舒适区" transform="translate(-18.000000, -99.000000)">
+            <g id="形状" transform="translate(20.000000, 119.000000)">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+        </g>
+    </g>
+</svg>

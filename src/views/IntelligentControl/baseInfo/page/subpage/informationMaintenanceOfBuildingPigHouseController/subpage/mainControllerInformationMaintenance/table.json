@@ -1,0 +1,186 @@
+{
+    "id": "31WG5HZHvqPuQZtZmzdBpb",
+    "regionId": "-11",
+    "regionName": "牧原总部",
+    "areaId": "-101",
+    "areaName": "实验区",
+    "fieldId": "-1002",
+    "fieldName": "实验2场",
+    "deviceName": "5J522oNQLX85g0udbRTTUD",
+    "deviceId": "4D633835323634394715000C0006",
+    "equiptypeId": "71aROnnbWGHz1dsjME4qE9",
+    "equiptypeName": "楼房猪舍环控器",
+    "deviceVersionId": "5fQu7Ci5WO9C5xG6hNOuwB",
+    "deviceVersionName": "环控主控制器",
+    "equipmentId": "2GK9INpkWdr08ygljzSRa4",
+    "qrCode": "-1JNUDHR3",
+    "description": null,
+    "status": "AUDITED",
+    "crtTime": "2020-09-06 14:54:15",
+    "crtUser": "3vWoyWzDlHWxY0loyt2GfO",
+    "crtName": "宋海峰",
+    "crtHost": "10.106.16.101",
+    "updTime": "2020-09-06 14:54:26",
+    "updUser": "3vWoyWzDlHWxY0loyt2GfO",
+    "updName": "宋海峰",
+    "updHost": "10.106.16.101",
+    "mac": null
+}
+
+{
+    areaId: "-101"
+areaName: "实验区"
+deviceId: "4D6320353543414D50080032004B"
+deviceName: "51j9ITYFvjs4DCTg9t5ODD"
+deviceVersionId: "5fQu7Ci5WO9C5xG6hNOuwB"
+deviceVersionName: "环控主控制器"
+equipmentId: "2AM12q0XFHj5myibDtTQHD"
+equiptypeId: "71aROnnbWGHz1dsjME4qE9"
+equiptypeName: "楼房猪舍环控器"
+fieldId: "-1002"
+fieldName: "实验2场"
+qrCode: "-Q2H5MYTU"
+regionId: "-11"
+regionName: "牧原总部"
+}
+
+areaId: "15417450"
+areaName: "内乡综合体"
+city: ["2", "15417450", "15418279"]
+crtHost: "10.106.16.101"
+crtName: "段创业"
+crtTime: "2020-10-10 08:36:36"
+crtUser: "3i9g4dOwUlzqjlmARChfBC"
+description: null
+deviceId: "4D6320353543414D50080032004B"
+deviceName: "51j9ITYFvjs4DCTg9t5ODD"
+deviceVersionId: "5fQu7Ci5WO9C5xG6hNOuwB"
+deviceVersionName: "环控主控制器"
+equipmentId: "2AM12q0XFHj5myibDtTQHD"
+equiptypeId: "71aROnnbWGHz1dsjME4qE9"
+equiptypeName: "楼房猪舍环控器"
+fieldId: "15418279"
+fieldName: "内乡综合体13厂"
+id: "7dbcVSsFBxxWfPdTcSMeuJ"
+mac: null
+qrCode: "-Q2H5MYTU"
+regionId: "2"
+regionName: "南阳"
+status: "NORMAL"
+updHost: "10.106.16.101"
+updName: "段创业"
+updTime: "2020-10-10 08:36:36"
+updUser: "3i9g4dOwUlzqjlmARChfBC"
+
+{
+    areaId: "-101"
+areaName: "实验区"
+block: "BLOCK_A"
+crtHost: "10.108.211.19"
+crtName: "赵志浩"
+crtTime: "2020-09-04 20:42:01"
+crtUser: "4HDwmUBGG03ZrLUl7KM3Co"
+description: null
+deviceId: "4D623835323634394715000B0008"
+deviceName: "7R8TWy4RuPiVwWMNVSHzCN"
+deviceVersionId: "79HSjRL2KuolfAkbamGLUZ"
+deviceVersionName: "风机控制器"
+equipmentId: "7jamWfXxsRFteRJxMo7GpM"
+equiptypeId: "71aROnnbWGHz1dsjME4qE9"
+equiptypeName: "楼房猪舍环控器"
+fieldId: "-1002"
+fieldName: "实验2场"
+id: "7dQAADFmjPo0ZHRVrtUWQy"
+mac: null
+qrCode: "-B98PC4TN"
+regionId: "-11"
+regionName: "牧原总部"
+slot: 1
+status: "AUDITED"
+updHost: "10.106.16.101"
+updName: "宋海峰"
+updTime: "2020-09-06 14:38:15"
+updUser: "3vWoyWzDlHWxY0loyt2GfO"
+}
+
+{
+    areaId: "-101"
+areaName: "实验区"
+block: "BLOCK_A"
+deviceId: "4D6220333458354E501400250045"
+deviceName: "4HBBX8u6OY9yviMK9XUoN6"
+deviceVersionId: "79HSjRL2KuolfAkbamGLUZ"
+deviceVersionName: "风机控制器"
+equipmentId: "2ocuBv5fJaOQav7AHI0W5R"
+equiptypeId: "71aROnnbWGHz1dsjME4qE9"
+equiptypeName: "楼房猪舍环控器"
+fieldId: "-1002"
+fieldName: "实验2场"
+qrCode: "-QU7D0DMT"
+regionId: "-11"
+regionName: "牧原总部"
+slot: 1
+}
+
+{
+    areaId: "-101"
+areaName: "实验区"
+block: "BLOCK_A"
+crtHost: "10.106.16.101"
+crtName: "宋海峰"
+crtTime: "2020-09-10 16:51:15"
+crtUser: "3vWoyWzDlHWxY0loyt2GfO"
+description: null
+deviceId: "4D6120333458354E501800330043"
+deviceName: "5lThBXLxLYsvfB8uDdyC0I"
+deviceType: null
+deviceVersionId: "7SgudxSuPkdhQnUbwg7NE7"
+deviceVersionName: "单元控制器"
+equipmentId: "3gCdSsrEKJ5zjs4aIdc4dH"
+equiptypeId: "71aROnnbWGHz1dsjME4qE9"
+equiptypeName: "楼房猪舍环控器"
+fieldId: "-1002"
+fieldName: "实验2场"
+floor: "FLOOR_THREE"
+id: "1xV6Uw9ecM2B9ktA9xc8FX"
+mac: null
+qrCode: "-5LGWF3YM"
+regionId: "-11"
+regionName: "牧原总部"
+roomTypeId: "13907"
+roomTypeName: "育肥舍"
+segmentId: "13907"
+segmentName: "育肥"
+status: "AUDITED"
+unitId: "62qTyIQL6wJhjDM2PwLuRH"
+unitName: "301"
+updHost: "10.106.16.101"
+updName: "宋海峰"
+updTime: "2020-09-10 16:51:15"
+updUser: "3vWoyWzDlHWxY0loyt2GfO"
+}
+
+{
+    areaId: "-101"
+    areaName: "实验区"
+    block: "BLOCK_A"
+    deviceId: "4D61383532363439471500170008"
+    deviceName: "6jSMnhjuaUvUMdG8MfvUJz"
+    deviceVersionId: "7SgudxSuPkdhQnUbwg7NE7"
+    deviceVersionName: "单元控制器"
+    equipmentId: "20jhDEPQugt5IaquMR93G7"
+    equiptypeId: "71aROnnbWGHz1dsjME4qE9"
+    equiptypeName: "楼房猪舍环控器"
+    fieldId: "-1002"
+    fieldName: "实验2场"
+    floor: "FLOOR_ONE"
+    qrCode: "-H3812EK7"
+    regionId: "-11"
+    regionName: "牧原总部"
+    roomTypeId: "13907"
+    roomTypeName: "育肥舍"
+    segmentId: "13907"
+    segmentName: "育肥"
+    unitId: "2wwhvPPfQevzUwAjso5xLW"
+    unitName: "111"
+}

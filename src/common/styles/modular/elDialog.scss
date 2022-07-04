@@ -1,0 +1,55 @@
+.el-dialog {
+  position: relative;
+  // background: var(--el-dialog-background);
+  @include background_color('diaBackGroundColor');
+  z-index: 100;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  max-height: 80vh;
+}
+.el-dialog__footer {
+  padding: 10px 30px 20px;
+}
+.el-dialog::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  // background-image: url('../../../assets/border/left-top-bg.png'),
+  //   url('../../../assets/border/right-top-bg.png'),
+  //   url('../../../assets/border/right-bottom-bg.png'),
+  //   url('../../../assets/border/left-bottom-bg.png');
+  @include background_image('equipTemBackgroundImage');
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top left, top right, bottom right, bottom left;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+.el-dialog::after {
+  content: '';
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  border: 1px solid;
+  @include border_color('spBorderColor8');
+  // box-shadow: inset 0 0 10px 0 var(--el-dialog_box-shadow);
+  @include box_shadow('spBoxShadow1');
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -50;
+}
+.el-dialog__header {
+  border: none !important;
+  border-bottom: 1px solid !important;
+  @include border_bottom_color('spBorderColor7');
+}
+.el-dialog__header{
+  padding: 7px 20px 10px;
+}
+.el-dialog__title {
+  @include font_color('spFontColor4');
+}

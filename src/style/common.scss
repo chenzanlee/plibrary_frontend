@@ -1,0 +1,42 @@
+@import './_handle.scss';
+
+////////////公用类
+.app-wrapper {
+  @include background("appWrapper");
+}
+
+.titleHighlight {
+  // @include background_color("titleHighlightBackground");
+  @include background_color("mainTitleHighlightBackgroundbg");
+  @include titleHighlight_border("mainTitleBorderColor");
+}
+
+//公共titleHight 
+.Highlight {
+  @include background_color("highlightBackground");
+}
+//公共titleHight 和视频播放
+.Highlight::before {
+  @include background_image("highlightbeforebgimg");
+  
+}
+.Highlight::after {
+  @include box_shadow("highlightaftershadow");
+  @include border_color("highlightafterbordercolor");
+}
+.title_bg_h3 {
+  @include background('titleHighlightBackgroundbg');
+  @include font_color('titFontcolor');
+  @include border_bottom('titleHighlightBorder');
+}
+
+h3.title, h3.short-title, h3.short-title2, h3.short-title3, h3.short-title4, h3.short-title5, h3.short-title6, h3.short-title7, h3.short-title8 {
+  // @include background('titleHighlightBackgroundbg');
+  @include background('mainTitleHighlightBackgroundbg');
+  @include font_color('titFontcolor');
+  @include border_bottom_color('mainTitleBorderColor');
+}
+.systemColorActive {
+  @include background('systemColorActive');
+  @include font_color('systemColorActivefontcolor');
+}

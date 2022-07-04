@@ -1,0 +1,86 @@
+.js-decoder-container {
+  height: 100%;
+  width: 100%;
+}
+.video-main{
+  width: 100%;
+  height: 100%;
+}
+.v-con-m-control{
+  position: relative;
+  bottom: 30px;
+  height: 30px;
+  width: 100%;
+  // background-color:rgba(16,40,88,0.6);
+  // background-color:red;
+}
+.contain{
+  height: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.c-cm-all{
+  margin-right: 20px;
+  // height: 20px;
+  // width: 20px;
+  // border: 1px solid red;
+  cursor: pointer;
+}
+.c-cm-01-open{
+  height: 30px;
+  width: 30px;
+  background-size: contain;
+  background: url('~@/assets/image/shotO.svg') no-repeat center center;
+}
+.c-cm-01-close{
+  height: 30px;
+  width: 30px;
+  background-size: contain;
+  background: url('~@/assets/image/shotC.svg') no-repeat center center;
+}
+.c-cm-02-open{
+  height: 30px;
+  width: 30px;
+  background-size: contain;
+  background: url('~@/assets/image/talkO.svg') no-repeat center center;
+}
+.c-cm-02-close{
+  height: 30px;
+  width: 30px;
+  background-size: contain;
+  background: url('~@/assets/image/talkC.png') no-repeat center center;
+}
+.c-cm-03-open{
+  height: 30px;
+  width: 30px;
+  background-size: contain;
+  background: url('~@/assets/image/voice.svg') no-repeat center center;
+}
+.c-cm-03-close{
+  height: 30px;
+  width: 30px;
+  background-size: contain;
+  background: url('~@/assets/image/mute.svg') no-repeat center center;
+}
+.c-cm-05-open{
+  height: 30px;
+  width: 30px;
+  background-size: contain;
+  background: url('~@/assets/image/fullO.svg') no-repeat center center;
+}
+.c-cm-05-close{
+  height: 30px;
+  width: 30px;
+  background-size: contain;
+  background: url('~@/assets/image/fullC.svg') no-repeat center center;
+}
+.c-cm-04{
+  height: 30px;
+  width: 30px;
+  // background-size: contain;
+  background-size: contain;
+  background: url('~@/assets/image/capture.svg') no-repeat center center;
+}

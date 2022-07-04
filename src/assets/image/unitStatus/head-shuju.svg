@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="15px" viewBox="0 0 14 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>数据统计图</title>
+    <desc>Created with Sketch.</desc>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板备份" transform="translate(-252.000000, -27.000000)" fill="#10AEFF">
+            <path d="M253,32 C253.552285,32 254,32.4477153 254,33 L254,42 L252,42 L252,33 C252,32.4477153 252.447715,32 253,32 Z M261,35 C261.552285,35 262,35.4477153 262,36 L262,42 L260,42 L260,36 C260,35.4477153 260.447715,35 261,35 Z M257,27 C257.552285,27 258,27.4477153 258,28 L258,42 L256,42 L256,28 C256,27.4477153 256.447715,27 257,27 Z M265,30 C265.552285,30 266,30.4477153 266,31 L266,42 L264,42 L264,31 C264,30.4477153 264.447715,30 265,30 Z" id="数据统计图"></path>
+        </g>
+    </g>
+</svg>

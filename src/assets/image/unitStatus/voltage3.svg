@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="11px" viewBox="0 0 16 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>56-75</title>
+    <g id="场区设备概览" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-61.000000, -30.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M71,28 L71,29.5 L74,29.5 L74,42.5 L64,42.5 L64,29.5 L67,29.5 L67,28 L71,28 Z M72.5,31 L65.5,31 L65.5,41 L72.5,41 L72.5,31 Z M72,38.75 L72,40.25 L66,40.25 L66,38.75 L72,38.75 Z M72,36.416667 L72,37.916667 L66,37.916667 L66,36.416667 L72,36.416667 Z M72,34.083333 L72,35.583333 L66,35.583333 L66,34.083333 L72,34.083333 Z" id="56-75" transform="translate(69.000000, 35.250000) rotate(-270.000000) translate(-69.000000, -35.250000) "></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="28px" viewBox="0 0 26 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>形状结合</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="删除" transform="translate(-947.000000, -514.000000)" fill="#68CCFF" fill-rule="nonzero">
+            <g id="编组-45" transform="translate(758.000000, 430.000000)">
+                <g id="编组-44" transform="translate(117.000000, 67.000000)">
+                    <path d="M98,22.3333333 L98,25 L95.932,25 L93.97,45 L76.03,45 L74.067,25 L72,25 L72,22.3333333 L98,22.3333333 Z M93.307,25 L76.692,25 L78.37,42.3333333 L91.63,42.3333333 L93.307,25 Z M83.7,29 L83.7,38.3333333 L81.1,38.3333333 L81.1,29 L83.7,29 Z M88.9,29 L88.9,38.3333333 L86.3,38.3333333 L86.3,29 L88.9,29 Z M90.2,17 L90.2,19.6666667 L79.8,19.6666667 L79.8,17 L90.2,17 Z" id="形状结合"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

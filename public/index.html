@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="referrer" content="no-referrer">
+    <link rel="icon" href="<%= BASE_URL %>favicon.svg">
+    <!-- <title><%= webpackConfig.name %></title> -->
+    <title>i管书</title>
+    <script src="<%= BASE_URL %>jsencrypt.min.js"></script>
+    <script src="<%= BASE_URL %>jsWebControl-1.0.0.min.js"></script>
+    <script src="<%= BASE_URL %>wechartRqcode.min.js" ></script>
+    <script src="<%= BASE_URL %>jsDecoder/jsPlugin-1.2.0.min.js"></script>
+    <!-- <script src="<%= BASE_URL %>socketjs.min.js"></script>
+    <script src="<%= BASE_URL %>stomp.min.js"></script> -->
+    <script src="https://cdn.bootcss.com/echarts/4.4.0-rc.1/echarts.min.js"></script>
+    <script src="https://webapi.amap.com/maps?v=1.4.15&key=e769fbb42baad74c08bbe353b62d40a8&plugin=AMap.Geocoder"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Base64/1.1.0/base64.min.js" integrity="sha512-gysqkfMGKYvQSEPi68aIzL4ffmrQ0I6azOoPJ+ocle8k1bblsHJh7QVVoy4HHQG2iPzvFmRbs81d8kkVSyCkjA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.0.3/pako.min.js" integrity="sha512-yJSo0YTQvvGOqL2au5eH0W4K/0FI0sTJuyHjiHkh0O31Lzlb814P0fDXtuEtzOj13lOBZ9j99BjqFx4ASz9pGA==" crossorigin="anonymous"></script>
+    <style >
+          .msgMask {
+      display: none;
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0,0,0,.65);
+      height: 100%;
+      z-index: 10;
+    }
+    .msgWrapper {
+      display: none;
+      position: absolute;
+      width: 400px;
+      height: 240px;
+      top: 50%;
+      left: 50%;
+      margin-top: -120px;
+      margin-left: -200px;
+      background-color: #fff;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      z-index: 100;
+    }
+    .msgHeader {
+      padding: 16px 24px;
+      border-radius: 4px 4px 0 0;
+      background: #fff;
+      color: rgba(0,0,0,.65);
+      border-bottom: 1px solid #e8e8e8;
+    }
+    .msgBody {
+      padding: 24px;
+    }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= webpackConfig.name %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="msgMask" class="msgMask"></div>
+    <div id="browserMsg" class="msgWrapper">
+      <h4 class="msgHeader">温馨提示：</h4>
+      <div class="msgBody">
+        <p>您当前使用的<span id="msgContent"></span>浏览器，为了更好的体验，请您使用Chrome浏览器。</p>
+
+      </div>
+    </div>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+  <script type="text/javascript" async="">
+        function browserVersion() {
+      var userAgent = navigator.userAgent.toLocaleLowerCase();
+      var isIE = userAgent.indexOf('compatible') !== -1 && userAgent.indexOf('msie') !== -1;
+      var isEdge = userAgent.indexOf('edge') !== -1 && !isIE;
+      var isIE11 = userAgent.indexOf('trident') !== -1 && userAgent.indexOf('rv:11.0') !== -1;
+      var isFF = userAgent.indexOf('firefox') !== -1;
+      var isChrome = userAgent.indexOf('chrome') !== -1;
+      var qqBrowser = userAgent.indexOf('qqbrowser') !== -1;
+      var is360 = _mime("type", "application/vnd.chromium.remoting-viewer");
+      var android = userAgent.indexOf('android') > -1;
+      if (!android) {
+        if (isIE) {
+          var reIE = new RegExp('MSIE (\\d+\\.\\d+);');
+          reIE.test(userAgent);
+          var fIEVersion = parseFloat(RegExp['$1']);
+          if (fIEVersion === 7) {
+            return 'IE7';
+          } else if (fIEVersion === 8) {
+            return 'IE8';
+          } else if (fIEVersion === 9) {
+            return 'IE9';
+          } else if (fIEVersion === 10) {
+            return 'IE10';
+          } else {
+            return 'IE';
+          }
+        } else if(isIE11) {
+          return 'IE11';
+        } else if(isEdge) {
+          return 'Edge';
+        } else if (qqBrowser) {
+          return 'QQ'
+        } else if (isFF) {
+          return '火狐'
+        } else if (is360) {
+          return '360';
+        }
+      }
+    };
+
+    //检测是否是谷歌内核(可排除360及谷歌以外的浏览器)
+    //测试mime
+    function _mime(option, value) {
+        var mimeTypes = navigator.mimeTypes && navigator.mimeTypes;
+        for (var mt in mimeTypes) {
+            if (mimeTypes[mt][option] == value) {
+                return true;
+            }
+        }
+        return false;
+    }
+    var msg = document.getElementById('browserMsg');
+    var msgContent = document.getElementById('msgContent');
+    var msgMask = document.getElementById('msgMask');
+    var curBrowser = browserVersion();
+
+    if(curBrowser) {
+      msg.style.display = 'block';
+      msgMask.style.display = 'block';
+      msgContent.innerHTML = curBrowser;
+    }
+  </script>
+</html>

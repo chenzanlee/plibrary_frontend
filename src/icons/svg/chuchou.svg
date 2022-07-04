@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="88px" viewBox="0 0 88 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 14备份 3</title>
+    <defs>
+        <circle id="path-1" cx="44.5" cy="44.5" r="39.5"></circle>
+        <filter x="-3.8%" y="-3.8%" width="107.6%" height="107.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="3" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.062745098   0 0 0 0 0.156470588   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <circle id="path-3" cx="44" cy="44" r="44"></circle>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="88" height="88" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="除臭墙" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="设备运行状态备份-2" transform="translate(-385.000000, -240.000000)">
+            <g id="编组-9备份-2" transform="translate(239.000000, 184.000000)">
+                <g id="编组-14备份-3" transform="translate(146.000000, 56.000000)">
+                    <g id="椭圆形">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        <circle stroke="#1990FF" stroke-width="1" stroke-linejoin="square" cx="44.5" cy="44.5" r="39"></circle>
+                    </g>
+                    <use id="椭圆形备份-2" stroke="#1990FF" mask="url(#mask-4)" stroke-width="2" stroke-dasharray="2" xlink:href="#path-3"></use>
+                    <path d="M35.4805601,51.1090466 C31.3245378,48.7496086 29.2015871,45.2068385 29.4029168,40.3578865 C29.4154999,40.0634084 29.4029168,39.7671237 29.4029168,39.3787016 C25.3295836,40.1826449 22.5559062,42.7805559 20.0446765,45.8210873 C19.9296309,44.525745 20,43.3406062 20.7007959,42.283737 C22.2071742,40.0128232 24.2312577,38.370611 26.8125933,37.5124693 C28.9696983,36.7898237 31.1969091,37.0156505 33.3809779,37.4474312 C37.6304747,38.2875068 41.4018132,40.2115507 44.9214894,42.6866119 C45.0347374,42.7661029 45.1551758,42.8329477 45.2702214,42.9052122 L45.3349345,42.7823625 C41.5977502,39.0047325 37.2871355,36.3941753 31.7218047,36.128603 C32.7833787,35.1902398 34.0150428,34.4664233 35.3493362,33.9967984 C37.1828754,33.3301579 39.0955084,33.0934914 41.0243198,33.0248401 C42.8560614,32.9525755 44.6860054,33.0121938 46.4638195,33.554178 C49.280639,34.4123197 51.4269585,36.2153204 53.2353314,38.4555219 C54.6284617,40.177225 55.9173319,41.9838391 57.3050694,43.7109621 C59.0073848,45.8337336 61.3064991,46.4570154 63.913001,46.1372447 C64.601477,46.0523339 65.2755723,45.831927 66,45.6639119 C65.8418123,45.9186444 65.7159812,46.1516976 65.5595911,46.3648781 C62.2436414,50.9055014 57.7826285,53.4118772 52.1765524,53.8840057 C47.7796535,54.3735981 38.9301304,53.2878231 35.4805601,51.1090466 Z" id="路径" fill="#1990FF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

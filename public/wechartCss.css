@@ -1,0 +1,27 @@
+html,
+.normalPanel,
+.waiting,
+iframe .waiting img{
+	width: 100% !important;
+	height: 100% !important;
+}
+.impowerBox .waiting,
+.impowerBox .wrp_code{
+	margin-top: 0px !important;
+}
+.impowerBox .title {display: none;}
+.impowerBox .info {display: none;}
+.impowerBox .qrcode{
+	height: 100% !important;
+	width: 60% !important;
+}
+.wrp_code_rl_mask{
+	background: rgba(0,0,0,0.8) !important;
+}
+.wrp_code_rl_info{
+	color: #fff !important;
+}
+.impowerBox .wrp_code_rl_bg{
+	width: 60% !important;
+	margin: 0 auto;
+}

@@ -1,0 +1,978 @@
+{
+  "status": 200,
+  "message": null,
+  "data": {
+    "total": 17,
+    "rows": [
+      {
+        "regionNum": "10",
+        "parentId": "-1",
+        "regionName": "西北",
+        "level": 0,
+        "children": [
+          {
+            "regionNum": "15292358",
+            "parentId": "10",
+            "regionName": "万荣",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15326334",
+            "parentId": "10",
+            "regionName": "永济",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15338653",
+            "parentId": "10",
+            "regionName": "夏县",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15365971",
+            "parentId": "10",
+            "regionName": "蒲城",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15365997",
+            "parentId": "10",
+            "regionName": "凉州",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15176674",
+            "parentId": "10",
+            "regionName": "大荔",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15174012",
+            "parentId": "10",
+            "regionName": "闻喜",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15323756",
+            "parentId": "10",
+            "regionName": "白水",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15281045",
+            "parentId": "10",
+            "regionName": "新绛",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15333268",
+            "parentId": "10",
+            "regionName": "繁峙",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15350092",
+            "parentId": "10",
+            "regionName": "原平",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15328048",
+            "parentId": "10",
+            "regionName": "代县",
+            "level": 0,
+            "children": null
+          }
+        ]
+      },
+      {
+        "regionNum": "16",
+        "parentId": "-1",
+        "regionName": "豫北",
+        "level": 0,
+        "children": [
+          {
+            "regionNum": "15166090",
+            "parentId": "16",
+            "regionName": "杞县",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15166935",
+            "parentId": "16",
+            "regionName": "滑县",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15165877",
+            "parentId": "16",
+            "regionName": "通许",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15335620",
+            "parentId": "16",
+            "regionName": "范县",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15396722",
+            "parentId": "16",
+            "regionName": "安阳",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15407445",
+            "parentId": "16",
+            "regionName": "滑县牧华",
+            "level": 0,
+            "children": null
+          }
+        ]
+      },
+      {
+        "regionNum": "5",
+        "parentId": "-1",
+        "regionName": "安徽",
+        "level": 0,
+        "children": [
+          {
+            "regionNum": "15339597",
+            "parentId": "5",
+            "regionName": "凤台",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15413111",
+            "parentId": "5",
+            "regionName": "怀远",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15337393",
+            "parentId": "5",
+            "regionName": "泗县",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15333196",
+            "parentId": "5",
+            "regionName": "濉溪",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15331977",
+            "parentId": "5",
+            "regionName": "颍泉",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15336875",
+            "parentId": "5",
+            "regionName": "颍上",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15331979",
+            "parentId": "5",
+            "regionName": "蒙城",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15407443",
+            "parentId": "5",
+            "regionName": "淮北牧华",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15337171",
+            "parentId": "5",
+            "regionName": "界首",
+            "level": 0,
+            "children": null
+          }
+        ]
+      },
+      {
+        "regionNum": "3",
+        "parentId": "-1",
+        "regionName": "豫东",
+        "level": 0,
+        "children": [
+          {
+            "regionNum": "15407449",
+            "parentId": "3",
+            "regionName": "扶沟牧华",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15335400",
+            "parentId": "3",
+            "regionName": "宁陵",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15382574",
+            "parentId": "3",
+            "regionName": "项城",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15335137",
+            "parentId": "3",
+            "regionName": "鹿邑",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15168957",
+            "parentId": "3",
+            "regionName": "西华",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15116388",
+            "parentId": "3",
+            "regionName": "扶沟",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15408804",
+            "parentId": "3",
+            "regionName": "宁陵牧华",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15173773",
+            "parentId": "3",
+            "regionName": "商水",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15173725",
+            "parentId": "3",
+            "regionName": "太康",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15405938",
+            "parentId": "3",
+            "regionName": "鄢陵",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15335396",
+            "parentId": "3",
+            "regionName": "睢阳",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15384755",
+            "parentId": "3",
+            "regionName": "夏邑",
+            "level": 0,
+            "children": null
+          }
+        ]
+      },
+      {
+        "regionNum": "2",
+        "parentId": "-1",
+        "regionName": "南阳",
+        "level": 0,
+        "children": [
+          {
+            "regionNum": "13903",
+            "parentId": "2",
+            "regionName": "内乡",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "13902",
+            "parentId": "2",
+            "regionName": "邓州",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15168980",
+            "parentId": "2",
+            "regionName": "社旗",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "13904",
+            "parentId": "2",
+            "regionName": "卧龙",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15167432",
+            "parentId": "2",
+            "regionName": "方城",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15431206",
+            "parentId": "2",
+            "regionName": "镇平",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15407447",
+            "parentId": "2",
+            "regionName": "南阳牧华",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "5115041",
+            "parentId": "2",
+            "regionName": "唐河",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15425102",
+            "parentId": "2",
+            "regionName": "南召",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "-201",
+            "parentId": "2",
+            "regionName": "内乡产业园",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15417450",
+            "parentId": "2",
+            "regionName": "内乡综合体",
+            "level": 0,
+            "children": null
+          }
+        ]
+      },
+      {
+        "regionNum": "4",
+        "parentId": "-1",
+        "regionName": "豫东南",
+        "level": 0,
+        "children": [
+          {
+            "regionNum": "15166430",
+            "parentId": "4",
+            "regionName": "正阳",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15337687",
+            "parentId": "4",
+            "regionName": "上蔡",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15337835",
+            "parentId": "4",
+            "regionName": "西平",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15338563",
+            "parentId": "4",
+            "regionName": "平舆",
+            "level": 0,
+            "children": null
+          }
+        ]
+      },
+      {
+        "regionNum": "9",
+        "parentId": "-1",
+        "regionName": "山东",
+        "level": 0,
+        "children": [
+          {
+            "regionNum": "15341960",
+            "parentId": "9",
+            "regionName": "牡丹",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15339407",
+            "parentId": "9",
+            "regionName": "单县",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15342681",
+            "parentId": "9",
+            "regionName": "莘县",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15339395",
+            "parentId": "9",
+            "regionName": "东明",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15115302",
+            "parentId": "9",
+            "regionName": "曹县",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15326620",
+            "parentId": "9",
+            "regionName": "垦利",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15376509",
+            "parentId": "9",
+            "regionName": "平原",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15393181",
+            "parentId": "9",
+            "regionName": "惠民",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15392725",
+            "parentId": "9",
+            "regionName": "庆云",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15392731",
+            "parentId": "9",
+            "regionName": "邹平",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15416005",
+            "parentId": "9",
+            "regionName": "茌平",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15411675",
+            "parentId": "9",
+            "regionName": "山东牧华",
+            "level": 0,
+            "children": null
+          }
+        ]
+      },
+      {
+        "regionNum": "11",
+        "parentId": "-1",
+        "regionName": "黑龙江",
+        "level": 0,
+        "children": [
+          {
+            "regionNum": "15316694",
+            "parentId": "11",
+            "regionName": "龙江",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15348433",
+            "parentId": "11",
+            "regionName": "克东",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15348439",
+            "parentId": "11",
+            "regionName": "富裕",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15340829",
+            "parentId": "11",
+            "regionName": "望奎",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15318477",
+            "parentId": "11",
+            "regionName": "兰西",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15332499",
+            "parentId": "11",
+            "regionName": "林甸",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15338886",
+            "parentId": "11",
+            "regionName": "明水",
+            "level": 0,
+            "children": null
+          }
+        ]
+      },
+      {
+        "regionNum": "6",
+        "parentId": "-1",
+        "regionName": "江苏",
+        "level": 0,
+        "children": [
+          {
+            "regionNum": "15428659",
+            "parentId": "6",
+            "regionName": "海安",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15332767",
+            "parentId": "6",
+            "regionName": "灌南",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15313374",
+            "parentId": "6",
+            "regionName": "铜山",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15374996",
+            "parentId": "6",
+            "regionName": "新沂",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15429538",
+            "parentId": "6",
+            "regionName": "栖霞",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15416800",
+            "parentId": "6",
+            "regionName": "溧水",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15382906",
+            "parentId": "6",
+            "regionName": "沭阳",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15416798",
+            "parentId": "6",
+            "regionName": "六合",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15418601",
+            "parentId": "6",
+            "regionName": "江宁",
+            "level": 0,
+            "children": null
+          }
+        ]
+      },
+      {
+        "regionNum": "15",
+        "parentId": "-1",
+        "regionName": "京津冀",
+        "level": 0,
+        "children": [
+          {
+            "regionNum": "15224958",
+            "parentId": "15",
+            "regionName": "广宗",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15324031",
+            "parentId": "15",
+            "regionName": "新河",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15347989",
+            "parentId": "15",
+            "regionName": "冀州",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15325649",
+            "parentId": "15",
+            "regionName": "海兴",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15388059",
+            "parentId": "15",
+            "regionName": "宁晋",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15314426",
+            "parentId": "15",
+            "regionName": "馆陶",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15411683",
+            "parentId": "15",
+            "regionName": "景县",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15383276",
+            "parentId": "15",
+            "regionName": "辛集",
+            "level": 0,
+            "children": null
+          }
+        ]
+      },
+      {
+        "regionNum": "13",
+        "parentId": "-1",
+        "regionName": "辽宁",
+        "level": 0,
+        "children": [
+          {
+            "regionNum": "15350206",
+            "parentId": "13",
+            "regionName": "台安",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15348825",
+            "parentId": "13",
+            "regionName": "黑山",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15313375",
+            "parentId": "13",
+            "regionName": "铁岭",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15342677",
+            "parentId": "13",
+            "regionName": "义县",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15299472",
+            "parentId": "13",
+            "regionName": "建平",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15325844",
+            "parentId": "13",
+            "regionName": "阜新",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15339020",
+            "parentId": "13",
+            "regionName": "昌图",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15380707",
+            "parentId": "13",
+            "regionName": "康平",
+            "level": 0,
+            "children": null
+          }
+        ]
+      },
+      {
+        "regionNum": "-11",
+        "parentId": "-1",
+        "regionName": "牧原总部",
+        "level": 0,
+        "children": [
+          {
+            "regionNum": "-101",
+            "parentId": "-11",
+            "regionName": "实验区",
+            "level": 0,
+            "children": null
+          }
+        ]
+      },
+      {
+        "regionNum": "12",
+        "parentId": "-1",
+        "regionName": "吉林",
+        "level": 0,
+        "children": [
+          {
+            "regionNum": "15332317",
+            "parentId": "12",
+            "regionName": "前郭",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15352713",
+            "parentId": "12",
+            "regionName": "大安",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15323751",
+            "parentId": "12",
+            "regionName": "双辽",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15330084",
+            "parentId": "12",
+            "regionName": "通榆",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15314533",
+            "parentId": "12",
+            "regionName": "农安",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15346390",
+            "parentId": "12",
+            "regionName": "双阳",
+            "level": 0,
+            "children": null
+          }
+        ]
+      },
+      {
+        "regionNum": "14",
+        "parentId": "-1",
+        "regionName": "内蒙古",
+        "level": 0,
+        "children": [
+          {
+            "regionNum": "15338615",
+            "parentId": "14",
+            "regionName": "科左中旗",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15338635",
+            "parentId": "14",
+            "regionName": "扎旗",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15314556",
+            "parentId": "14",
+            "regionName": "开鲁",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15210206",
+            "parentId": "14",
+            "regionName": "翁牛特",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15210205",
+            "parentId": "14",
+            "regionName": "敖汉",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15210204",
+            "parentId": "14",
+            "regionName": "奈曼",
+            "level": 0,
+            "children": null
+          }
+        ]
+      },
+      {
+        "regionNum": "29",
+        "parentId": "-1",
+        "regionName": "云南",
+        "level": 0,
+        "children": [
+          {
+            "regionNum": "15390573",
+            "parentId": "29",
+            "regionName": "石林",
+            "level": 0,
+            "children": null
+          }
+        ]
+      },
+      {
+        "regionNum": "7",
+        "parentId": "-1",
+        "regionName": "湖北",
+        "level": 0,
+        "children": [
+          {
+            "regionNum": "15318088",
+            "parentId": "7",
+            "regionName": "老河口",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15327263",
+            "parentId": "7",
+            "regionName": "石首",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15365951",
+            "parentId": "7",
+            "regionName": "公安",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15418327",
+            "parentId": "7",
+            "regionName": "江陵",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "5115089",
+            "parentId": "7",
+            "regionName": "钟祥",
+            "level": 0,
+            "children": null
+          }
+        ]
+      },
+      {
+        "regionNum": "20",
+        "parentId": "-1",
+        "regionName": "广西",
+        "level": 0,
+        "children": [
+          {
+            "regionNum": "15398226",
+            "parentId": "20",
+            "regionName": "柳城",
+            "level": 0,
+            "children": null
+          },
+          {
+            "regionNum": "15415937",
+            "parentId": "20",
+            "regionName": "宾阳",
+            "level": 0,
+            "children": null
+          }
+        ]
+      }
+    ]
+  }
+}

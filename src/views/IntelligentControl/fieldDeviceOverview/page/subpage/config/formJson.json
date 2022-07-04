@@ -1,0 +1,40 @@
+{
+  "arr":[
+    {
+     "label": "参数锁定(喷淋、风机)：",
+     "key": "lockParam",
+      "type": "radio",
+      "className": "shadow",
+      "customLabel": "name",
+      "customVal":"val",
+      "optList": [{ "name": "锁定", "val": 1 },{ "name": "不锁定", "val": 0 }]     
+    },
+    {
+      "label": "定速风机数量(0-5)：",
+      "key": "fixSpeedFanAmount",
+      "type": "inputNumber",
+      "controlsPositionRight": "right"
+    },
+    {
+      "label": "室内前温湿度传感器Mac地址：",
+      "key": "indoorBeforeProbe_mac",
+      "type": "input",
+      "className": "shadow",
+      "placeholder": "none"
+    },
+    {
+      "label": "室内后温湿度传感器Mac地址：",
+      "key": "indoorAfterProbe_mac",
+      "type": "input",
+      "className": "shadow",
+      "placeholder": "none"
+    },
+    {
+      "label": "暖灯温湿度传感器Mac地址：",
+      "key": "heatLampProbe_mac",
+      "type": "input",
+      "className": "shadow",
+      "placeholder": "none"
+    }
+  ]
+}

@@ -1,0 +1,926 @@
+{
+  "region": {
+    "江苏": "jiangsu",
+    "南阳": "nanyang",
+    "豫东南": "yudongnan",
+    "牧原总部": "muyuanzongbu",
+    "黑龙江": "heilongjiang",
+    "山东": "shandong",
+    "豫北": "yubei",
+    "吉林": "jilin",
+    "安徽": "anhui",
+    "山西": "shanxi",
+    "陕西": "shanxi1",
+    "甘肃": "gansu",
+    "内蒙古": "neimenggu",
+    "京津冀": "jingjinyi",
+    "豫东": "yudong",
+    "湖北": "hubei",
+    "辽宁": "liaoning",
+    "云南": "yunnan",
+    "广东": "guangdong",
+    "广西": "guangxi",
+    "贵州": "guizhou",
+    "海南": "hainan",
+    "湖南": "hunan",
+    "江西": "jiangxi",
+    "四川": "sichuan",
+    "浙江": "zhejiang"
+  },
+  "area": {
+    "铜山": "tongshan",
+    "实验区": "shiyanqu",
+    "邳州": "pizhou",
+    "栖霞": "qixia",
+    "射阳": "sheyang",
+    "姜堰": "jiangyan",
+    "高港": "gaogang",
+    "江宁": "jiangning",
+    "睢宁": "suining",
+    "金湖": "jinhu",
+    "清江浦": "qingjiangpu",
+    "宝应": "baoying",
+    "海安": "haian",
+    "灌南": "guannan",
+    "镇江": "zhenjiang",
+    "溧水": "lishui",
+    "海州": "haizhou",
+    "阜宁": "funing",
+    "洪泽": "hongze",
+    "闻喜": "wenxi",
+    "万荣": "wanrong",
+    "大荔": "dali",
+    "新绛": "xinjiang",
+    "白水": "baishui",
+    "代县": "daixian",
+    "永济": "yongji",
+    "繁峙": "fanshi",
+    "夏县": "xiaxian",
+    "陈仓": "chencang",
+    "凉州": "liangzou",
+    "原平": "yuanping",
+    "神池": "shenchi",
+    "龙江": "longjiang",
+    "兰西": "lanxi",
+    "林甸": "lindian",
+    "明水": "mingshui",
+    "望奎": "wangkui",
+    "富裕": "fuyu",
+    "木兰": "mulan",
+    "甘南": "gannan",
+    "克东": "kedong",
+    "农安": "nongan",
+    "双辽": "shuangliao",
+    "通榆": "tongyu",
+    "前郭": "qianguo",
+    "双阳": "shuagnyang",
+    "大安": "daan",
+    "乾安": "qianan",
+    "敖汉": "aohan",
+    "翁牛特": "wengniute",
+    "铁岭": "tieling",
+    "建平": "jianping",
+    "开原": "kaiyuan",
+    "太子河": "taizihe",
+    "阜新": "puxin",
+    "台安": "taian",
+    "义县": "yixian",
+    "昌图": "changtu",
+    "黑山": "heishan",
+    "奈曼": "naiman",
+    "开鲁": "kailu",
+    "科左中旗": "kezuozhongqi",
+    "科右中旗": "keyouzhongqi",
+    "乌拉特": "wulate",
+    "扎赉特": "zhalaite",
+    "扎旗": "zhaqi",
+    "馆陶": "guantao",
+    "海兴": "haixing",
+    "新河": "xinhe",
+    "冀州": "jizou",
+    "房山": "fangshan",
+    "沽源": "guyuan",
+    "辛集": "xinji",
+    "广宗": "guangzong",
+    "滑县": "huaxian",
+    "滑县牧华": "huaxianmuhua",
+    "濮阳": "puyang",
+    "杞县": "qixian",
+    "通许": "tongxu",
+    "范县": "fanxian",
+    "内乡": "neixiang",
+    "卧龙": "wolong",
+    "淅川": "xichuan",
+    "南召": "nanzhao",
+    "西峡": "xixia",
+    "邓州": "dengzou",
+    "唐河": "tanghe",
+    "方城": "fangcheng",
+    "社旗": "sheqi",
+    "镇平": "zhenping",
+    "扶沟": "fugou",
+    "扶沟牧华": "fugoumuhua",
+    "西华": "xihua",
+    "商水": "shangshui",
+    "太康": "taikang",
+    "宁陵": "ningling",
+    "宁陵牧华": "ninglingmuhua",
+    "汝州": "ruzhou",
+    "柘城": "zhecheng",
+    "民权": "minquan",
+    "睢阳": "suiyang",
+    "鹿邑": "luyi",
+    "正阳": "zhengyang",
+    "西平": "xiping",
+    "上蔡": "shangcai",
+    "平舆": "pingyu",
+    "固始": "gushi",
+    "颍上": "yinshang",
+    "谯城": "jiaocheng",
+    "蒙城": "mengcheng",
+    "凤台": "fengtai",
+    "颍泉": "yinquan",
+    "界首": "jieshou",
+    "濉溪": "suixi",
+    "固镇": "guzhen",
+    "埇桥": "yongqiao",
+    "利辛": "lixin",
+    "淮北牧华": "huaibeimuhua",
+    "泗县": "sixian",
+    "钟祥": "zhongxiang",
+    "枣阳": "zaoyang",
+    "江陵": "jiangling",
+    "公安": "gongan",
+    "黄梅": "huangmei",
+    "老河口": "laohekou",
+    "石首": "shishou",
+    "平原": "pingyuan",
+    "曹县": "caoxian",
+    "垦利": "kenli",
+    "东明": "dongming",
+    "莘县": "shenxian",
+    "单县": "shanxian",
+    "牡丹": "mudan",
+    "石林": "shilin",
+    "柳城": "liucheng",
+    "宾阳": "binyang",
+    "兴宾": "xingbin",
+    "武鸣": "wuming",
+    "横县": "hengxian",
+    "银海": "yinhai",
+    "西乡塘": "xixiangtang",
+    "雷州": "leizhou",
+    "东源": "dongyuan",
+    "海口": "haikou",
+    "安乡": "anxiang",
+    "景县": "jingxian",
+    "景泰": "jingtai",
+    "宁晋": "ningjin",
+    "夏邑": "xiayi",
+    "新沂": "xinyi",
+    "沭阳": "shuyang",
+    "惠民": "huimin",
+    "茌平": "chiping",
+    "临邑": "linyi",
+    "山东牧华": "shandongmuhua",
+    "庆云": "qingyun",
+    "郯城": "tancheng",
+    "台儿庄": "taierzhuang",
+    "怀远": "huaiyuan",
+    "蒲城": "pucheng",
+    "邹平": "zouping",
+    "项城": "xiangcheng",
+    "六合": "liuhe",
+    "康平": "kangping",
+    "鄢陵": "yanling",
+    "清丰": "qingfeng",
+    "内黄": "neihuang",
+    "安阳": "anyang",
+    "依安": "yian",
+    "克山": "keshan",
+    "金堂": "jintang",
+    "绵竹": "mianzhu",
+    "邛崃": "qionglai",
+    "独山": "dushan",
+    "乐安": "lean",
+    "袁州": "yuanzhou",
+    "临海": "linhai",
+    "沙洋": "shayang",
+    "南阳牧华": "nanyangmuhua",
+    "内乡综合体": "neixiangzongheti"
+  },
+  "areaParent": {
+    "沙洋": {
+      "parentName": "湖北",
+      "parentId": "7"
+    },
+    "临海": {
+      "parentName": "浙江",
+      "parentId": "30"
+    },
+    "乐安": {
+      "parentName": "江西",
+      "parentId": "24"
+    },
+    "袁州": {
+      "parentName": "江西",
+      "parentId": "24"
+    },
+    "金堂": {
+      "parentName": "四川",
+      "parentId": "28"
+    },
+    "绵竹": {
+      "parentName": "四川",
+      "parentId": "28"
+    },
+    "邛崃": {
+      "parentName": "四川",
+      "parentId": "28"
+    },
+    "独山": {
+      "parentName": "四川",
+      "parentId": "28"
+    },
+    "铜山": {
+      "parentName": "贵州",
+      "parentId": "21"
+    },
+    "邳州": {
+      "parentName": "江苏",
+      "parentId": "6"
+    },
+    "栖霞": {
+      "parentName": "江苏",
+      "parentId": "6"
+    },
+    "射阳": {
+      "parentName": "江苏",
+      "parentId": "6"
+    },
+    "姜堰": {
+      "parentName": "江苏",
+      "parentId": "6"
+    },
+    "高港": {
+      "parentName": "江苏",
+      "parentId": "6"
+    },
+    "江宁": {
+      "parentName": "江苏",
+      "parentId": "6"
+    },
+    "睢宁": {
+      "parentName": "江苏",
+      "parentId": "6"
+    },
+    "金湖": {
+      "parentName": "江苏",
+      "parentId": "6"
+    },
+    "宝应": {
+      "parentName": "江苏",
+      "parentId": "6"
+    },
+    "海安": {
+      "parentName": "江苏",
+      "parentId": "6"
+    },
+    "镇江": {
+      "parentName": "江苏",
+      "parentId": "6"
+    },
+    "溧水": {
+      "parentName": "江苏",
+      "parentId": "6"
+    },
+    "海州": {
+      "parentName": "江苏",
+      "parentId": "6"
+    },
+    "阜宁": {
+      "parentName": "江苏",
+      "parentId": "6"
+    },
+    "洪泽": {
+      "parentName": "江苏",
+      "parentId": "6"
+    },
+    "灌南": {
+      "parentName": "江苏",
+      "parentId": "6"
+    },
+    "新沂": {
+      "parentName": "江苏",
+      "parentId": "6"
+    },
+    "沭阳": {
+      "parentName": "江苏",
+      "parentId": "6"
+    },
+    "六合": {
+      "parentName": "江苏",
+      "parentId": "6"
+    },
+    "闻喜": {
+      "parentName": "山西",
+      "parentId": "26"
+    },
+    "万荣": {
+      "parentName": "山西",
+      "parentId": "26"
+    },
+    "新绛": {
+      "parentName": "山西",
+      "parentId": "26"
+    },
+    "代县": {
+      "parentName": "山西",
+      "parentId": "26"
+    },
+    "永济": {
+      "parentName": "山西",
+      "parentId": "26"
+    },
+    "繁峙": {
+      "parentName": "山西",
+      "parentId": "26"
+    },
+    "夏县": {
+      "parentName": "山西",
+      "parentId": "26"
+    },
+    "原平": {
+      "parentName": "山西",
+      "parentId": "26"
+    },
+    "神池": {
+      "parentName": "山西",
+      "parentId": "26"
+    },
+    "大荔": {
+      "parentName": "陕西",
+      "parentId": "27"
+    },
+    "白水": {
+      "parentName": "陕西",
+      "parentId": "27"
+    },
+    "陈仓": {
+      "parentName": "陕西",
+      "parentId": "27"
+    },
+    "蒲城": {
+      "parentName": "陕西",
+      "parentId": "27"
+    },
+    "凉州": {
+      "parentName": "甘肃",
+      "parentId": "32"
+    },
+    "景泰": {
+      "parentName": "甘肃",
+      "parentId": "32"
+    },
+    "龙江": {
+      "parentName": "黑龙江",
+      "parentId": "11"
+    },
+    "兰西": {
+      "parentName": "黑龙江",
+      "parentId": "11"
+    },
+    "林甸": {
+      "parentName": "黑龙江",
+      "parentId": "11"
+    },
+    "明水": {
+      "parentName": "黑龙江",
+      "parentId": "11"
+    },
+    "望奎": {
+      "parentName": "黑龙江",
+      "parentId": "11"
+    },
+    "富裕": {
+      "parentName": "黑龙江",
+      "parentId": "11"
+    },
+    "木兰": {
+      "parentName": "黑龙江",
+      "parentId": "11"
+    },
+    "甘南": {
+      "parentName": "黑龙江",
+      "parentId": "11"
+    },
+    "克东": {
+      "parentName": "黑龙江",
+      "parentId": "11"
+    },
+    "克山": {
+      "parentName": "黑龙江",
+      "parentId": "11"
+    },
+    "依安": {
+      "parentName": "黑龙江",
+      "parentId": "11"
+    },
+    "农安": {
+      "parentName": "吉林",
+      "parentId": "12"
+    },
+    "双辽": {
+      "parentName": "吉林",
+      "parentId": "12"
+    },
+    "通榆": {
+      "parentName": "吉林",
+      "parentId": "12"
+    },
+    "前郭": {
+      "parentName": "吉林",
+      "parentId": "12"
+    },
+    "双阳": {
+      "parentName": "吉林",
+      "parentId": "12"
+    },
+    "大安": {
+      "parentName": "吉林",
+      "parentId": "12"
+    },
+    "乾安": {
+      "parentName": "吉林",
+      "parentId": "12"
+    },
+    "铁岭": {
+      "parentName": "辽宁",
+      "parentId": "13"
+    },
+    "建平": {
+      "parentName": "辽宁",
+      "parentId": "13"
+    },
+    "开原": {
+      "parentName": "辽宁",
+      "parentId": "13"
+    },
+    "太子河": {
+      "parentName": "辽宁",
+      "parentId": "13"
+    },
+    "阜新": {
+      "parentName": "辽宁",
+      "parentId": "13"
+    },
+    "台安": {
+      "parentName": "辽宁",
+      "parentId": "13"
+    },
+    "义县": {
+      "parentName": "辽宁",
+      "parentId": "13"
+    },
+    "昌图": {
+      "parentName": "辽宁",
+      "parentId": "13"
+    },
+    "黑山": {
+      "parentName": "辽宁",
+      "parentId": "13"
+    },
+    "康平": {
+      "parentName": "辽宁",
+      "parentId": "13"
+    },
+    "奈曼": {
+      "parentName": "内蒙古",
+      "parentId": "14"
+    },
+    "开鲁": {
+      "parentName": "内蒙古",
+      "parentId": "14"
+    },
+    "科左中旗": {
+      "parentName": "内蒙古",
+      "parentId": "14"
+    },
+    "科右中旗": {
+      "parentName": "内蒙古",
+      "parentId": "14"
+    },
+    "乌拉特": {
+      "parentName": "内蒙古",
+      "parentId": "14"
+    },
+    "扎赉特": {
+      "parentName": "内蒙古",
+      "parentId": "14"
+    },
+    "扎旗": {
+      "parentName": "内蒙古",
+      "parentId": "14"
+    },
+    "敖汉": {
+      "parentName": "内蒙古",
+      "parentId": "14"
+    },
+    "翁牛特": {
+      "parentName": "内蒙古",
+      "parentId": "14"
+    },
+    "馆陶": {
+      "parentName": "京津冀",
+      "parentId": "15"
+    },
+    "海兴": {
+      "parentName": "京津冀",
+      "parentId": "15"
+    },
+    "宁晋": {
+      "parentName": "京津冀",
+      "parentId": "15"
+    },
+    "新河": {
+      "parentName": "京津冀",
+      "parentId": "15"
+    },
+    "冀州": {
+      "parentName": "京津冀",
+      "parentId": "15"
+    },
+    "房山": {
+      "parentName": "京津冀",
+      "parentId": "15"
+    },
+    "沽源": {
+      "parentName": "京津冀",
+      "parentId": "15"
+    },
+    "辛集": {
+      "parentName": "京津冀",
+      "parentId": "15"
+    },
+    "广宗": {
+      "parentName": "京津冀",
+      "parentId": "15"
+    },
+    "景县": {
+      "parentName": "京津冀",
+      "parentId": "15"
+    },
+    "滑县": {
+      "parentName": "豫北",
+      "parentId": "16"
+    },
+    "滑县牧华": {
+      "parentName": "豫北",
+      "parentId": "16"
+    },
+    "濮阳": {
+      "parentName": "豫北",
+      "parentId": "16"
+    },
+    "杞县": {
+      "parentName": "豫北",
+      "parentId": "16"
+    },
+    "通许": {
+      "parentName": "豫北",
+      "parentId": "16"
+    },
+    "清丰": {
+      "parentName": "豫北",
+      "parentId": "16"
+    },
+    "内黄": {
+      "parentName": "豫北",
+      "parentId": "16"
+    },
+    "安阳": {
+      "parentName": "豫北",
+      "parentId": "16"
+    },
+    "范县": {
+      "parentName": "豫北",
+      "parentId": "16"
+    },
+    "内乡": {
+      "parentName": "南阳",
+      "parentId": "2"
+    },
+    "卧龙": {
+      "parentName": "南阳",
+      "parentId": "2"
+    },
+    "邓州": {
+      "parentName": "南阳",
+      "parentId": "2"
+    },
+    "淅川": {
+      "parentName": "南阳",
+      "parentId": "2"
+    },
+    "南召": {
+      "parentName": "南阳",
+      "parentId": "2"
+    },
+    "西峡": {
+      "parentName": "南阳",
+      "parentId": "2"
+    },
+    "唐河": {
+      "parentName": "南阳",
+      "parentId": "2"
+    },
+    "方城": {
+      "parentName": "南阳",
+      "parentId": "2"
+    },
+    "社旗": {
+      "parentName": "南阳",
+      "parentId": "2"
+    },
+    "镇平": {
+      "parentName": "南阳",
+      "parentId": "2"
+    },
+    "南阳牧华": {
+      "parentName": "南阳",
+      "parentId": "2"
+    },
+    "内乡综合体": {
+      "parentName": "南阳",
+      "parentId": "2"
+    },
+    "扶沟": {
+      "parentName": "豫东",
+      "parentId": "3"
+    },
+    "扶沟牧华": {
+      "parentName": "豫东",
+      "parentId": "3"
+    },
+    "西华": {
+      "parentName": "豫东",
+      "parentId": "3"
+    },
+    "商水": {
+      "parentName": "豫东",
+      "parentId": "3"
+    },
+    "太康": {
+      "parentName": "豫东",
+      "parentId": "3"
+    },
+    "宁陵": {
+      "parentName": "豫东",
+      "parentId": "3"
+    },
+    "宁陵牧华": {
+      "parentName": "豫东",
+      "parentId": "3"
+    },
+    "睢阳": {
+      "parentName": "豫东",
+      "parentId": "3"
+    },
+    "柘城": {
+      "parentName": "豫东",
+      "parentId": "3"
+    },
+    "民权": {
+      "parentName": "豫东",
+      "parentId": "3"
+    },
+    "汝州": {
+      "parentName": "豫东",
+      "parentId": "3"
+    },
+    "鹿邑": {
+      "parentName": "豫东",
+      "parentId": "3"
+    },
+    "夏邑": {
+      "parentName": "豫东",
+      "parentId": "3"
+    },
+    "项城": {
+      "parentName": "豫东",
+      "parentId": "3"
+    },
+    "鄢陵": {
+      "parentName": "豫东",
+      "parentId": "3"
+    },
+    "正阳": {
+      "parentName": "豫东南",
+      "parentId": "4"
+    },
+    "西平": {
+      "parentName": "豫东南",
+      "parentId": "4"
+    },
+    "上蔡": {
+      "parentName": "豫东南",
+      "parentId": "4"
+    },
+    "平舆": {
+      "parentName": "豫东南",
+      "parentId": "4"
+    },
+    "固始": {
+      "parentName": "豫东南",
+      "parentId": "4"
+    },
+    "颍上": {
+      "parentName": "安徽",
+      "parentId": "5"
+    },
+    "谯城": {
+      "parentName": "安徽",
+      "parentId": "5"
+    },
+    "蒙城": {
+      "parentName": "安徽",
+      "parentId": "5"
+    },
+    "凤台": {
+      "parentName": "安徽",
+      "parentId": "5"
+    },
+    "颍泉": {
+      "parentName": "安徽",
+      "parentId": "5"
+    },
+    "界首": {
+      "parentName": "安徽",
+      "parentId": "5"
+    },
+    "濉溪": {
+      "parentName": "安徽",
+      "parentId": "5"
+    },
+    "固镇": {
+      "parentName": "安徽",
+      "parentId": "5"
+    },
+    "埇桥": {
+      "parentName": "安徽",
+      "parentId": "5"
+    },
+    "利辛": {
+      "parentName": "安徽",
+      "parentId": "5"
+    },
+    "淮北牧华": {
+      "parentName": "安徽",
+      "parentId": "5"
+    },
+    "泗县": {
+      "parentName": "安徽",
+      "parentId": "5"
+    },
+    "怀远": {
+      "parentName": "安徽",
+      "parentId": "5"
+    },
+    "钟祥": {
+      "parentName": "湖北",
+      "parentId": "7"
+    },
+    "枣阳": {
+      "parentName": "湖北",
+      "parentId": "7"
+    },
+    "江陵": {
+      "parentName": "湖北",
+      "parentId": "7"
+    },
+    "公安": {
+      "parentName": "湖北",
+      "parentId": "7"
+    },
+    "黄梅": {
+      "parentName": "湖北",
+      "parentId": "7"
+    },
+    "老河口": {
+      "parentName": "湖北",
+      "parentId": "7"
+    },
+    "石首": {
+      "parentName": "湖北",
+      "parentId": "7"
+    },
+    "平原": {
+      "parentName": "山东",
+      "parentId": "9"
+    },
+    "曹县": {
+      "parentName": "山东",
+      "parentId": "9"
+    },
+    "垦利": {
+      "parentName": "山东",
+      "parentId": "9"
+    },
+    "东明": {
+      "parentName": "山东",
+      "parentId": "9"
+    },
+    "莘县": {
+      "parentName": "山东",
+      "parentId": "9"
+    },
+    "单县": {
+      "parentName": "山东",
+      "parentId": "9"
+    },
+    "牡丹": {
+      "parentName": "山东",
+      "parentId": "9"
+    },
+    "惠民": {
+      "parentName": "山东",
+      "parentId": "9"
+    },
+    "茌平": {
+      "parentName": "山东",
+      "parentId": "9"
+    },
+    "临邑": {
+      "parentName": "山东",
+      "parentId": "9"
+    },
+    "山东牧华": {
+      "parentName": "山东",
+      "parentId": "9"
+    },
+    "庆云": {
+      "parentName": "山东",
+      "parentId": "9"
+    },
+    "郯城": {
+      "parentName": "山东",
+      "parentId": "9"
+    },
+    "台儿庄": {
+      "parentName": "山东",
+      "parentId": "9"
+    },
+    "邹平": {
+      "parentName": "山东",
+      "parentId": "9"
+    },
+    "石林": {
+      "parentName": "云南",
+      "parentId": "29"
+    },
+    "雷州": {
+      "parentName": "广东",
+      "parentId": "19"
+    },
+    "东源": {
+      "parentName": "广东",
+      "parentId": "19"
+    },
+    "柳城": {
+      "parentName": "广西",
+      "parentId": "20"
+    },
+    "银海": {
+      "parentName": "广西",
+      "parentId": "20"
+    },
+    "西乡塘": {
+      "parentName": "广西",
+      "parentId": "20"
+    },
+    "兴宾": {
+      "parentName": "广西",
+      "parentId": "20"
+    },
+    "武鸣": {
+      "parentName": "广西",
+      "parentId": "20"
+    },
+    "横县": {
+      "parentName": "广西",
+      "parentId": "20"
+    },
+    "宾阳": {
+      "parentName": "广西",
+      "parentId": "20"
+    },
+    "海口": {
+      "parentName": "海南",
+      "parentId": "22"
+    },
+    "安乡": {
+      "parentName": "湖南",
+      "parentId": "23"
+    }
+  }
+}

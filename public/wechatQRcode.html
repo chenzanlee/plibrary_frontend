@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="referrer" content="no-referrer">
+    <link rel="icon" href="./favicon.svg">
+    <title>i管书</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      .main{
+      }
+    </style>
+    <script src="./wechartRqcode.min.js"></script>
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="main" id="qrcode_element"></div>
+  </body>
+</html>
+<script type="text/javascript">
+window.onload = function () {
+  // getSystemId();
+  getSystemIds();
+}
+// function getSystemId() {
+//   const id = getQueryVariable('systemId');
+//   const systemId = id ? id : 'BAR-PATROL-CLIENT';
+//   // const url = window.location.protocol + "//" + window.location.host;
+//   const url = 'https://iot.imuyuan.com'
+//   axios.get(`${url}/api/wechat/auth/buildWxLoginInfo?systemId=${systemId}`)
+//   .then(res=>{
+//     if (res.data.status === 200 && res.data.rel) {
+//       getQrcode(res.data.data.state)
+//     } else {
+//       alert('获取二维码失败！')
+//     }
+//   });
+// }
+function getSystemIds() {
+  const id = getQueryVariable('systemId');
+  const systemId = id ? id : 'BAR-PATROL-CLIENT';
+  var url = 'https://iot.imuyuan.com/api/wechat/auth/buildWxLoginInfo?systemId=' + systemId;
+  $.get(url, function(res){
+    if (res.status === 200 && res.rel) {
+      getQrcode(res.data.state)
+    } else {
+      alert('获取二维码失败！')
+    }
+  });
+}
+function getQrcode(state) {
+  window.WwLogin({
+    'id': 'qrcode_element',
+    'appid': 'ww7d751c0944e1ab5f',
+    'agentid': '1000024',
+    'redirect_uri': encodeURI('https://my.imuyuan.com/api/wechat/auth/wxLogin'),
+    'state': state,
+    'href': ''
+  });
+}
+function getQueryVariable(variable) {
+  var query = window.location.search.substring(1);
+  var vars = query.split("&");
+  for (var i=0;i<vars.length;i++) {
+    var pair = vars[i].split("=");
+    if(pair[0] == variable){return pair[1];}
+  }
+  return(false);
+}
+
+</script>

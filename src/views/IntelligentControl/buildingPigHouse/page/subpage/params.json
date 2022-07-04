@@ -1,0 +1,183 @@
+{
+    "regionId": "-11",
+    "regionName": "牧原总部",
+    "areaId": "-101",
+    "areaName": "实验区",
+    "fieldId": "-1002",
+    "fieldName": "实验2场",
+    "floor": "FLOOR_ONE",
+    "block": "BLOCK_A",
+    "segmentId": "13907",
+    "segmentName": "育肥",
+    "roomTypeId": "13907",
+    "roomTypeName": "育肥舍",
+    "unit": "101",
+    "unitId": "2UNzOXwTdruIjHs1cgnvYj",
+    "isEmptyUnit": 0,
+    "isAlarmSuspend": 0,
+    "suspendMinutes": null,
+    "equiptypeId": "71aROnnbWGHz1dsjME4qE9",
+    "equiptypeName": "楼房猪舍环控器",
+    "deviceVersionId": "7SgudxSuPkdhQnUbwg7NE7",
+    "versionName": "单元控制器",
+    "deviceName": "6o9lZrSdOoRw7uLbqz2iNc",
+    "deviceId": "4D61383532363439470D001E001E",
+    "deviceSecret": null,
+    "firmwareVersion": "40691",
+    "statusOnline": 0,
+    "statusWarning": 0,
+    "statusTrouble": 0,
+    "statusRepair": 0,
+    "beforeIndoorTemp": null,
+    "beforeIndoorHumidity": null,
+    "afterIndoorTemp": null,
+    "afterIndoorHumidity": null,
+    "windowZeroSpeed": null,
+    "windowOneSpeed": null,
+    "windowTwoSpeed": null,
+    "windowFourSpeed": null,
+    "windowZeroOpenPercent": null,
+    "windowFourOpenPercent": null
+}
+
+{
+accDrinkWaterUsage: null
+accMedicateWaterUsage: null
+accShowerWaterUsage: null
+accWashWaterUsage: null
+afterIndoorHumidity: 0
+afterIndoorTemp: 0
+afterIndoorTempSensorAlarm: null
+afterIndoorTempSensorFault: null
+airHotExchangeFault: null
+airHotExchangeOpenPercent: null
+alarmAccOpenTime: null
+alarmFault: null
+alarmStatus: null
+areaId: null
+beforeIndoorHumidity: 0
+beforeIndoorTemp: 0
+beforeIndoorTempSensorAlarm: null
+beforeIndoorTempSensorFault: null
+block: null
+centerIndoorHumidity: 0
+centerIndoorTemp: 0
+centerIndoorTempSensorAlarm: null
+centerIndoorTempSensorFault: null
+deviceAccTime: 0
+deviceId: null
+deviceMsgId: null
+drinkAccOpenTime: null
+drinkFault: null
+drinkStatus: null
+fieldId: null
+floor: null
+g2HumiAccOpenTime: null
+g2HumiFault: null
+g2HumiStatus: null
+heatLampAccOpenTime: null
+heatLampFault: null
+heatLampHumidity: 0
+heatLampStatus: null
+heatLampTemp: 0
+heatLampTempSensorAlarm: null
+heatLampTempSensorFault: null
+hotPlateAccOpenTime: null
+hotPlateFault: null
+hotPlateStatus: null
+lightAccOpenTime: null
+lightFault: null
+lightStatus: null
+outdoorHumidity: 0
+outdoorTemp: 0
+outdoorTempSensorAlarm: null
+outdoorTempSensorFault: null
+regionId: null
+segmentId: null
+sewageAccumulativeTime: null
+sewageAlarmFault: null
+sewageStatus: null
+shower1AccUptime: null
+shower1Alarm: null
+shower2AccUptime: null
+shower2Alarm: null
+showerStatus1: null
+showerStatus2: null
+time: null
+topicMsgId: null
+unit: null
+uploadTime: null
+useHumidity: 0
+useTemp: 0
+windowFourFault: null
+windowFourOpenPercent: null
+windowFourSpeed: 0
+windowOneSpeed: 0
+windowTwoSpeed: 0
+windowZeroFault: null
+windowZeroOpenPercent: null
+windowZeroSpeed: 0
+}
+
+{
+accDrinkWaterUsage: null
+accMedicateWaterUsage: null
+accShowerWaterUsage: null
+accWashWaterUsage: null
+afterIndoorHumidity: 6620.5
+afterIndoorTemp: 18.8
+airHotExchangeOpenPercent: null
+alarmAccOpenTime: null
+alarmStatus: null
+areaId: null
+areaName: null
+beforeIndoorHumidity: 6620.1
+beforeIndoorTemp: 18.3
+block: null
+centerIndoorHumidity: 0
+centerIndoorTemp: 0
+deviceAccTime: 0
+deviceId: "4D61383532363439470D001E001E"
+deviceMsgId: null
+drinkAccOpenTime: null
+drinkStatus: null
+fieldId: null
+fieldName: null
+floor: null
+g2HumiAccOpenTime: null
+g2HumiStatus: null
+heatLampAccOpenTime: null
+heatLampHumidity: 0
+heatLampStatus: null
+heatLampTemp: 0
+hotPlateAccOpenTime: null
+hotPlateStatus: null
+lightAccOpenTime: null
+lightStatus: null
+outdoorHumidity: 73.1
+outdoorTemp: 12.2
+regionId: null
+regionName: null
+roomTypeId: null
+roomTypeName: null
+segmentId: null
+segmentName: null
+sewageAccumulativeTime: null
+sewageStatus: null
+shower1AccUptime: null
+shower2AccUptime: null
+showerStatus1: null
+showerStatus2: null
+time: "2020-10-16T22:41:25Z"
+unit: null
+unitId: null
+uploadTime: "2020-10-17 06:41:25"
+useHumidity: 0
+useTemp: 0
+windowFourOpenPercent: 0
+windowFourSpeed: 0
+windowOneSpeed: 0
+windowTwoSpeed: 0
+windowZeroOpenPercent: 0
+windowZeroSpeed: 0
+}

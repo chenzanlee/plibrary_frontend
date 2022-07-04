@@ -1,0 +1,96 @@
+:root {
+  /*
+  * 面包屑
+  */
+  --el-breadcrumb-inner: #6e83be;
+  --el-breadcrumb-active: #fff;
+ 
+  /*
+  * el-dialog 弹框
+  */
+  --el-dialog-background: #001D45;
+  --el-dialog__title-color: #ffffff;
+  --el-dialog__header-border-bottom: #1a3166;
+  --el-dialog_after-border: #8669fb;
+  --el-dialog_box-shadow: #396dff;
+
+  /*
+  * table 表格
+  */
+  --el-table-background: #0e2148;
+  // 斑马线条纹
+  --el-warning-row: #0d2055;
+  --el-table-border: #313c82;
+  // 滚动条颜色
+  --el-table-scrollable-x: #344489;
+
+  /*
+  * message消息框
+  */
+  --el-messag-background: #1f2a6b;
+  --el-messag-border: #43619f;
+
+  // ---dcy---
+  // 级联下拉 和 select下拉的统一背景色
+  --el-cas-sel-background: #142753;
+   // 级联下拉 和 select下拉的统一文字大小 颜色
+   --el-cas-sel-font-size:14px;
+   --el-cas-sel-font-color: #fff;
+  // 级联下拉 右border颜色
+  --el-cas-right-border-color: #253c64;
+  // 级联下拉 和 select下拉的统一hover背颜色
+  --el-cas-sel-hover-background:#034c90;
+  // 级联下拉 和 select下拉的统一框内 箭头颜色
+  --el-cas-sel-in-arrow-color:#C0C4CC;
+  // 级联下拉 和 select下拉的统一icon样式---即下拉箭头（小三角）颜色
+  --el-cas-sel-icon-line-color:#142753;  // #ebeef5  #C0C4CC  #142753
+  // 级联下拉 和 select下拉的统一icon填充色样式
+  --el-cas-sel-icon-color:#142753;
+  // 级联下拉 和 select下拉的统一icon样式---即下拉箭头（小三角）宽度
+  --el-cas-sel-icon-width: 2px; // 默认 0
+  // form表单项元素的高度
+  --el-form-item-height: 36px;
+  // from表单项元素上下之间的空间高度
+  --el-from-item-marginBot-height: 20px;
+  // general-form表单项字体颜色
+  --gener-form-item-color: #cdd8f7;
+  // general-form表单项字体大小
+  --gener-form-item-size: 13px;
+
+  // nav-form-style
+  --el-placeholder-font-color: #7A94C3;
+  --el-form-font-color: #FFF;
+  --el-diabled-form-back-color: #1d2c4c;
+  --el-form-back-color: #00113a;
+  --el-form-font-weight: 400;
+  --el-form-border-hover: #5085E3;
+  --el-form-font-size: 12px;
+
+
+
+  /*
+  * date时间
+  */
+  --el-time-border-color:#253c64;
+  --el-time-line-height: 28px;
+  --el-time-header-color:#fff;
+  --el-time-panel-color:#6C7DAD;
+  --el-time-active-color:#409EFF;
+
+
+  /*
+  * tree下拉树形
+  */
+  --el-tree-background: rgba(38,54,118, .5);
+  --el-tree-node_content-color: #A5AEC8;
+  --el-tree-node_content-height: 36px;
+  --el-tree-node_content-hover-background: #3e59a2;
+  --el-tree-node_content-hover-color: #fff;
+  --el-tree-node-focus-tree-node__content-background:  rgba(0,0,0,0);
+
+  // generform 里的radio样式
+  --gener-radio-font-color: #409EFF;
+  --gener-radio-disable-font-color: #C0C4CC;
+  --gener-input-disable-font-color:#adadad;
+}
+

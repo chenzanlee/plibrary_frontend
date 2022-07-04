@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="88px" viewBox="0 0 88 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 14备份 5</title>
+    <defs>
+        <circle id="path-1" cx="44.5" cy="44.5" r="39.5"></circle>
+        <filter x="-3.8%" y="-3.8%" width="107.6%" height="107.6%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="3" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.062745098   0 0 0 0 0.156470588   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <circle id="path-3" cx="44" cy="44" r="44"></circle>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="88" height="88" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="除臭墙" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="设备运行状态备份-2" transform="translate(-387.000000, -708.000000)">
+            <g id="编组-14备份-5" transform="translate(387.000000, 708.000000)">
+                <g id="椭圆形">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <circle stroke="#1990FF" stroke-width="1" stroke-linejoin="square" cx="44.5" cy="44.5" r="39"></circle>
+                </g>
+                <use id="椭圆形备份-2" stroke="#1990FF" mask="url(#mask-4)" stroke-width="2" stroke-dasharray="2" xlink:href="#path-3"></use>
+                <g id="paiwuzhuangzhi" transform="translate(25.000000, 24.000000)" fill="#1990FF" fill-rule="nonzero">
+                    <path d="M20,0 C31.045695,0 40,8.954305 40,20 C40,31.045695 31.045695,40 20,40 C8.954305,40 0,31.045695 0,20 C0,8.954305 8.954305,0 20,0 Z M19.9999998,3 C13.9264849,3 8.31432552,6.24018158 5.27756795,11.5 C2.24081038,16.7598183 2.24081038,23.2401817 5.27756795,28.5 C8.31432552,33.7598184 13.9264849,37 19.9999998,37 C29.3888407,37 36.9999998,29.3888406 36.9999998,20 C36.9999998,10.6111594 29.3888407,3 19.9999998,3 L19.9999998,3 Z" id="形状"></path>
+                    <path d="M20,7.5 C26.9035594,7.5 32.5,13.0964406 32.5,20 C32.5,26.9035594 26.9035594,32.5 20,32.5 C13.0964406,32.5 7.5,26.9035594 7.5,20 C7.5,13.0964406 13.0964406,7.5 20,7.5 Z M20,11 C15.0294373,11 11,15.0294373 11,20 C11,24.9705627 15.0294373,29 20,29 C24.9705627,29 29,24.9705627 29,20 C29,15.0294373 24.9705627,11 20,11 Z" id="形状"></path>
+                    <path d="M12.6080769,12.6527469 C13.4227279,11.8382953 14.7432774,11.8382953 15.5579285,12.6527469 L19.9806197,17.0756913 L24.4095694,12.6527469 C24.9368823,12.1257765 25.7052588,11.92017 26.4252588,12.1133773 C27.1452589,12.3065846 27.7074974,12.869253 27.9001846,13.5894307 C28.0928718,14.3096084 27.8867339,15.0778833 27.359421,15.6048537 L22.9325574,20.027798 L27.359421,24.4549149 C28.1025897,25.198196 28.176789,26.3783006 27.5325735,27.2088237 L27.359421,27.4049354 C26.5447699,28.219387 25.2242205,28.219387 24.4095694,27.4049354 L19.9827058,22.9778184 L15.5579285,27.4049354 C15.0341432,27.9472813 14.2584961,28.1647901 13.5291079,27.9738619 C12.7997197,27.7829338 12.2301001,27.2132816 12.0391829,26.4838516 C11.8482656,25.7544217 12.0657619,24.9787302 12.6080769,24.4549149 L17.0307681,20.027798 L12.6080769,15.6048537 C11.864269,14.8621176 11.7891736,13.6819797 12.4328382,12.8509449 L12.6080769,12.6527469 Z" id="路径"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
