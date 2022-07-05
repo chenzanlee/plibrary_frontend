@@ -151,7 +151,7 @@ export function getExport(data) {
   for (const name in data) {
     url += name + '=' + data[name] + '&'
   }
-  url += 'token=' + localStorage.getItem('MY-Admin-Token')
+  url += 'token=' + localStorage.getItem('TOKEN')
   window.open(url, 'left=0,meunbar=no,toolbar=no,scrollbar=yes,status=yes')
 }
 

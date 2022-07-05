@@ -4,7 +4,7 @@ export function derive(baseUrl, data) {
   for (const name in data) {
     url += name + '=' + data[name] + '&'
   }
-  url += 'token=' + localStorage.getItem('MY-Admin-Token')
+  url += 'token=' + localStorage.getItem('TOKEN')
   let aDom = document.createElement('a')
   aDom.setAttribute('download', url)
   aDom.setAttribute('href', url)
@@ -18,7 +18,7 @@ export function deriveOpenNewWindow(baseUrl, data) {
   for (const name in data) {
     url += name + '=' + data[name] + '&'
   }
-  url += 'token=' + localStorage.getItem('MY-Admin-Token')
+  url += 'token=' + localStorage.getItem('TOKEN')
   // let aDom = document.createElement('a')
   // aDom.setAttribute('download', url)
   // aDom.setAttribute('href', url)
@@ -53,10 +53,10 @@ function downloadAjax(url, data, method = 'get') {
   if (method.toLocaleLowerCase() === 'post') {
     axiosConfig.data = data
     axiosConfig.headers = {
-      'Authorization': localStorage.getItem('MY-Admin-Token')
+      'Authorization': localStorage.getItem('TOKEN')
     }
   } else {
-    data.token = localStorage.getItem('MY-Admin-Token')
+    data.token = localStorage.getItem('TOKEN')
     axiosConfig.params = data
   }
   // for (const name in data) {

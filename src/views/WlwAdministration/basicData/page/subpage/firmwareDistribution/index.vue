@@ -272,7 +272,7 @@ export default {
       }
       const element = this.pageElement['exportEquipFirmvareVersionStats']
       derive('/api' + element.uri, obj)
-      // obj['token'] = localStorage.getItem('MY-Admin-Token')
+      // obj['token'] = localStorage.getItem('TOKEN')
       // derive('/api/bar_patrol/myBpSymptomMarkers/export', obj)
       // this.$httpRequest({
       //   type: 'GET',

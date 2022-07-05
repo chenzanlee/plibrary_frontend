@@ -4,7 +4,7 @@
  * @author author-name(lhb 1301465186@qq.com)
  */
 
-const TokenKey = 'MY-Admin-Token'
+const TokenKey = 'TOKEN'
 const RefreshKey = 'MY-Refresh-Token'
 const ExpiresKey = 'MY-Refresh-Expires'
 const AuthTimeKey = 'MY-Auth-Time'

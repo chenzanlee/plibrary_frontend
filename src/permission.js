@@ -1,8 +1,7 @@
 import router from '@/router'
-// import { storageFrontInfo } from '@/utils/overtService'
 /* 路由拦截器 路由跳转前的操作 */
 const getToken = () => {
-  const token = localStorage.getItem('MY-Admin-Token') || null
+  const token = localStorage.getItem('TOKEN') || 'leechenzan'
   return token
 }
 const whiteList = ['/login', '/404', '/403', '/unauthPage'] // 路由白名单  不需要token的页面
@@ -12,7 +11,7 @@ router.beforeEach((to, from, next) => {
     if (whiteList.includes(to.path)) {
       next()
     } else {
-      next('/login')
+      next('/index')
     }
   } else {
     const cancelArr = window.axiosCancel

@@ -4,10 +4,7 @@
       <img src="../../assets/image/page/403.png" alt="" style="max-width: 600px;">
       <div class="option">
         <span class="login-btn-view " @click="goLogin">返回登录</span>
-        <!-- <span v-if="token" class="login-btn-view " @click="goBack">返回上一页</span>
-        <span v-else class="login-btn-view " @click="goLogin">前往登录</span> -->
       </div>
-      <!-- <div class="to-box">本页面将于<span>{{ seconds }}</span>s后跳转到数据中心...</div> -->
     </div>
 
   </div>

@@ -10,7 +10,7 @@
         <div class="login-main" :class="landingType === 'modifyKey' ? 'login-main2' : ''">
           <div class="login-title">
             <!-- i管书 -->
-            <img  src="@/assets/image/appname.png" alt="i管书">
+            <img src="@/assets/image/appname.png" alt="i管书">
           </div>
           <div :class="landingType === 'account' ? '' : 'login-main2'">
             <div class="login-row">
@@ -201,7 +201,7 @@ import {
   getWechart,
   buildWxLoginInfo
 } from '@/http/api/signIn/loginIn'
-import { storageFrontInfo } from '@/utils/overtService'
+// import { storageFrontInfo } from '@/utils/overtService'
 import jwtDecode from 'jwt-decode'
 
 export default {
@@ -510,13 +510,6 @@ export default {
     },
     // 登录
     handleLogin() {
-      // if (!this.loginForm.username || !this.loginForm.password || this.loginForm.passwordS) {
-      //   this.$message({
-      //     message: '账户/密码格式错误',
-      //     type: 'error'
-      //   })
-      //   return false
-      // }
       this.loadingState = true
       this.$store.commit('changeStyle', 'dark')
       this.$store
@@ -524,27 +517,29 @@ export default {
         .then((res) => {
           // this.getPermission()
           console.log('登陆成功')
-          this.$router.push({
-            path: '/unit-evc'
-          })
-        })
-        .catch(() => {
+          const arr = [{
+            appCode: 'unit-evc',
+            title: '环控',
+            frontendRoutePath: '/unit-evc'
+          }]
+          this.getUserJurisdiction(arr)
+        }).catch(() => {
           this.loadingState = false
           // this.imgCheckFlag = false
         })
     },
     // 获取登录权限
     async getUserJurisdiction(arr = []) {
-      storageFrontInfo(arr[0].appCode).then((ress) => {
-        localStorage.currentlySelect = JSON.stringify({
-          appCode: arr[0].appCode,
-          name: arr[0].title,
-          path: arr[0].frontendRoutePath
-        })
-        this.$router.push({
-          path: arr[0].frontendRoutePath
-        })
+      // storageFrontInfo(arr[0].appCode).then((ress) => {
+      localStorage.currentlySelect = JSON.stringify({
+        appCode: arr[0].appCode,
+        name: arr[0].title,
+        path: arr[0].frontendRoutePath
       })
+      this.$router.push({
+        path: '/index'
+      })
+      // })
     },
     // 获取菜单
     getPermission() {
@@ -775,7 +770,7 @@ export default {
       localStorage.setItem('MY-Refresh-Expires', token.exp)
       localStorage.setItem('MY-Bytes', JSON.stringify(token))
       localStorage.setItem('MY-UserInfo', userInfo.accessToken.loginName)
-      localStorage.setItem('MY-Admin-Token', userInfo.accessToken.accessToken)
+      localStorage.setItem('TOKEN', userInfo.accessToken.accessToken)
       localStorage.setItem('MY-Refresh-Token', userInfo.accessToken.refreshToken)
       localStorage.setItem('user-token', userInfo.accessToken.accessToken)
 

@@ -145,7 +145,7 @@ export default {
   created() {
     this.headers = {
       appCode: 'unit-evc',
-      Authorization: localStorage.getItem('MY-Admin-Token'),
+      Authorization: localStorage.getItem('TOKEN'),
       'X-Requested-With': 'XMLHttpRequest'
     }
     this.pageElement = getConfigElement('dataView')

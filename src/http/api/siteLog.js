@@ -72,7 +72,7 @@ export function derive(baseUrl, data) {
   // eslint-disable-next-line no-unused-vars
   var newWindow
 
-  url += 'token=' + localStorage.getItem('MY-Admin-Token')
+  url += 'token=' + localStorage.getItem('TOKEN')
   newWindow = window.open(url, 'left=0,meunbar=no,toolbar=no,scrollbar=yes,status=yes')
   // newWindow=window.open('http://localhost:8080')
   setTimeout(function() {

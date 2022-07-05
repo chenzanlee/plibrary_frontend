@@ -2,7 +2,7 @@
 // import Stomp from 'stompjs'
 // function createWebSocket(deviceId, callback, getStompClient) {
 //   let stompClient = null
-//   const token = localStorage.getItem('MY-Admin-Token') // 'http://dev.imuyuan.com/unit_evc_ws'
+//   const token = localStorage.getItem('TOKEN') // 'http://dev.imuyuan.com/unit_evc_ws'
 //   const socket = new SockJS('https://10.106.11.37/unit_evc_ws', null, {
 //     'protocols_whitelist': ['websocket']
 //   })

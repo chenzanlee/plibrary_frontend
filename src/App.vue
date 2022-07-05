@@ -16,7 +16,7 @@ export default {
   },
   data() {
     return {
-      navbarShow: false
+      navbarShow: true
     }
   },
   computed: {
@@ -28,7 +28,7 @@ export default {
   watch: {
     $route(to, from) {
       if (whiteList.indexOf(to.path) !== -1) {
-        this.navbarShow = false
+        this.navbarShow = true
       } else {
         this.navbarShow = true
       }

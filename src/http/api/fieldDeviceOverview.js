@@ -6,7 +6,7 @@ import request from '@/http/http'
 
 // 导出表格
 export function exportTable(uri, params) {
-  return `api${uri}?token=${localStorage.getItem('MY-Admin-Token')}&${stringify(
+  return `api${uri}?token=${localStorage.getItem('TOKEN')}&${stringify(
     params
   )}`
 }
