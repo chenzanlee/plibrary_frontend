@@ -22,13 +22,21 @@ import WlwAdministration from '@/views/WlwAdministration/A.Public/router/index'
 const baseRouterMap = [
   {
     path: '/',
-    redirect: '/login'
+    redirect: '/index'
   },
+  // {
+  //   path: '/',
+  //   redirect: '/login'
+  // },
   // {
   //   // 平台概览
   //   path: '/platform-overview',
   //   component: () => import('@/views/PlatformOverview/index')
   // },
+  {
+    path: '/index',
+    component: () => import('@/views/plibrary/index')
+  },
   {
     path: '/403',
     component: () => import('@/views/errorPage/403')
