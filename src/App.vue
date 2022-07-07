@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <navbar v-if="!isfullScreen && navbarShow" />
+    <navbar v-if="navbarShow" />
     <router-view />
   </div>
 </template>
@@ -27,7 +27,7 @@ export default {
   },
   watch: {
     $route(to, from) {
-      if (whiteList.indexOf(to.path) !== -1) {
+      if (whiteList.indexOf(to.path) === -1) {
         this.navbarShow = true
       } else {
         this.navbarShow = true
@@ -50,7 +50,7 @@ export default {
 @import './common/fonts/acens.css';
 @import "@/style/common.scss";
 body {
-  background-color: #13346e;
+  //background-color: #13346e;
 }
 #app {
   /* display: flex;

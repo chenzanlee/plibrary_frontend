@@ -1,16 +1,28 @@
 <template>
   <div class="content-page">
     <div class="my-manage-libraries">
-      <div>我管理的书馆</div>
+      <div>{{ library.name }}</div>
       <div ref="tabsParent" class="libraries-body">
         <div ref="tabsChild" class="libraries">
-          <div
-              v-for="(library, index) in libraries"
-              :key="index"
-              class="library-item"
-              :class="library.libraryId === selectLibraryId ? 'select': 'unselect'"
-              @click="select(library)"
-          >{{ library.name }}
+          <div>
+            <div>类目:</div>
+            <div>{{ categoryNum }}</div>
+          </div>
+          <div>
+            <div>书籍:</div>
+            <div>{{ bookNum }}</div>
+          </div>
+          <div>
+            <div>成员:</div>
+            <div>{{ memberNum }}</div>
+          </div>
+          <div>
+            <div>书籍预约</div>
+            <div>{{ bookReserveNum }}</div>
+          </div>
+          <div>
+            <div>入馆申请</div>
+            <div>{{ joinApplicationNUm }}</div>
           </div>
         </div>
       </div>
@@ -19,7 +31,6 @@
 </template>
 
 <script>
-
 import { getToken } from '@/views/userManagement/common/auth/authStore'
 import { clearTimeout } from 'timers'
 import { mapGetters } from 'vuex'
@@ -41,7 +52,13 @@ export default {
         libraryId: 2,
         name: '2号书馆'
       }],
-      selectLibraryId: ''
+      selectLibraryId: '',
+      stats: {
+        categoryNum: 0,
+        bookNum: 0,
+        copyNum: 0,
+
+      }
     }
   },
   mounted() {

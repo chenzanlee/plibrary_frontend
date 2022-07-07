@@ -28,13 +28,12 @@ const baseRouterMap = [
   //   path: '/',
   //   redirect: '/login'
   // },
+  // {
+  //   // 平台概览
+  //   path: '/platform-overview',
+  //   component: () => import('@/views/PlatformOverview/index')
+  // },
   {
-    // 平台概览
-    path: '/platform-overview',
-    component: () => import('@/views/PlatformOverview/index')
-  },
-  {
-    // 首页
     path: '/index',
     component: () => import('@/views/plibrary/index')
   },
