@@ -19,6 +19,9 @@ import IntelligentControl from '@/views/IntelligentControl/A.Public/router/index
 // 清洁生产
 import WlwAdministration from '@/views/WlwAdministration/A.Public/router/index'
 
+// 清洁生产
+import plibrary from '@/views/plibrary/library/public/router/index'
+
 const baseRouterMap = [
   {
     path: '/',
@@ -62,7 +65,8 @@ const routerAbout404 = [
 const appRouterMap = [
   IntelligentControl,
   userManagements,
-  WlwAdministration
+  WlwAdministration,
+  plibrary
 ]
 
 let constantRouterMap = []
