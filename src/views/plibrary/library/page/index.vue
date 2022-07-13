@@ -4,25 +4,25 @@
       <div>{{ library.name }}</div>
       <div ref="tabsParent" class="libraries-body">
         <div ref="tabsChild" class="libraries">
-          <div>
+          <div class="stats-item">
             <div>类目:</div>
-            <div>{{ stats.categoryNum }}</div>
+            <div  class="field-value">{{ stats.categoryNum }}</div>
           </div>
-          <div>
+          <div class="stats-item">
             <div>书籍:</div>
-            <div>{{ stats.bookNum }}</div>
+            <div  class="field-value">{{ stats.bookNum }}</div>
           </div>
-          <div>
+          <div class="stats-item">
             <div>成员:</div>
-            <div>{{ stats.memberNum }}</div>
+            <div class="field-value">{{ stats.memberNum }}</div>
           </div>
-          <div>
-            <div>书籍预约</div>
-            <div>{{ stats.bookReserveNum }}</div>
+          <div class="stats-item">
+            <div>书籍预约:</div>
+            <div  class="field-value">{{ stats.bookReserveNum }}</div>
           </div>
-          <div>
-            <div>入馆申请</div>
-            <div>{{ stats.joinApplicationNum }}</div>
+          <div class="stats-item">
+            <div>入馆申请:</div>
+            <div  class="field-value">{{ stats.joinApplicationNum }}</div>
           </div>
         </div>
       </div>
@@ -31,103 +31,104 @@
 </template>
 
 <script>
-  import { getToken } from '@/views/userManagement/common/auth/authStore'
-  import { clearTimeout } from 'timers'
-  import { mapGetters } from 'vuex'
+import { getToken } from '@/views/userManagement/common/auth/authStore'
+import { clearTimeout } from 'timers'
+import { mapGetters } from 'vuex'
 
-  let timerOut = null
+let timerOut = null
 
-  // async function fetchLibrary(libraryId) {
-  //   return {
-  //     libraryId: libraryId,
-  //     name: '5号书馆'
-  //   };
-  // }
+async function fetchLibrary(libraryId) {
+  return {
+    libraryId: libraryId,
+    name: '5号书馆'
+  }
+}
 
-  export default {
-    beforeRouteLeave(to, from, next) {
-      this.closeTimer()
-      next()
-    },
-    async beforeRouteUpdate(to, from) {
-      // 对路由变化做出响应...
-      console.lg('params', to.params)
-      this.library = await fetchLibrary(to.params.libraryId)
-    },
-    data() {
-      return {
-        seconds: 300,
-        token: getToken(),
-        library: {
-          libraryId: 1,
-          name: '1号书馆'
-        },
-        libraryId: '',
-        stats: {
-          categoryNum: 0,
-          bookNum: 0,
-          copyNum: 0,
-          bookReserveNum: 0,
-          joinApplicationNum: 0
+export default {
+  beforeRouteLeave(to, from, next) {
+    this.closeTimer()
+    next()
+  },
+  async beforeRouteUpdate(to, from) {
+    // 对路由变化做出响应...
+    console.lg('params', to.params)
+    this.library = await fetchLibrary(to.params.libraryId)
+  },
+  data() {
+    return {
+      seconds: 300,
+      token: getToken(),
+      library: {
+        libraryId: 1,
+        name: '1号书馆'
+      },
+      libraryId: '',
+      stats: {
+        categoryNum: 0,
+        bookNum: 0,
+        copyNum: 0,
+        bookReserveNum: 0,
+        memberNum: 0,
+        joinApplicationNum: 0
 
-        }
-      }
-    },
-    mounted() {
-      if (!this.isfullScreen) {
-        this.$store.dispatch('checkFullScreen')
-      }
-      // this.startTimer()
-    },
-    destroyed() {
-      if (this.isfullScreen) {
-        this.$store.dispatch('checkFullScreen')
-      }
-      // this.closeTimer()
-    },
-    computed: {
-      ...mapGetters(['fullScreen']),
-      isfullScreen() {
-        return this.fullScreen
-      }
-    },
-    methods: {
-      startTimer() {
-        const timer = () => {
-          timerOut = setTimeout(() => {
-            if (this.seconds > 0) {
-              this.seconds--
-              if (timerOut) {
-                timer()
-              }
-            } else {
-              timerOut = null
-              clearTimeout(timerOut)
-              this.$router.push({
-                path: '/dashboard/operationsMap'
-              })
-            }
-          }, 1000)
-        }
-        timer()
-      },
-      closeTimer() {
-        timerOut = null
-        clearTimeout(timerOut)
-      },
-      goLogin() {
-        this.$router.push({path: '/login'})
-      },
-      select(library) {
-        this.selectLibraryId = library.libraryId
-        this.$router.push({path: '/library_home_page/' + this.selectLibraryId})
-      },
-      goBack() {
-        this.closeTimer()
-        window.history.go(-1)
       }
     }
+  },
+  mounted() {
+    if (!this.isfullScreen) {
+      this.$store.dispatch('checkFullScreen')
+    }
+    // this.startTimer()
+  },
+  destroyed() {
+    if (this.isfullScreen) {
+      this.$store.dispatch('checkFullScreen')
+    }
+    // this.closeTimer()
+  },
+  computed: {
+    ...mapGetters(['fullScreen']),
+    isfullScreen() {
+      return this.fullScreen
+    }
+  },
+  methods: {
+    startTimer() {
+      const timer = () => {
+        timerOut = setTimeout(() => {
+          if (this.seconds > 0) {
+            this.seconds--
+            if (timerOut) {
+              timer()
+            }
+          } else {
+            timerOut = null
+            clearTimeout(timerOut)
+            this.$router.push({
+              path: '/dashboard/operationsMap'
+            })
+          }
+        }, 1000)
+      }
+      timer()
+    },
+    closeTimer() {
+      timerOut = null
+      clearTimeout(timerOut)
+    },
+    goLogin() {
+      this.$router.push({ path: '/login' })
+    },
+    select(library) {
+      this.selectLibraryId = library.libraryId
+      this.$router.push({ path: '/library_home_page/' + this.selectLibraryId })
+    },
+    goBack() {
+      this.closeTimer()
+      window.history.go(-1)
+    }
   }
+}
 </script>
 
 <style lang="scss" scoped>
@@ -174,6 +175,17 @@
 
   .library-item {
     padding: 16px 16px;
+  }
+
+  .stats-item {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 50px;
+  }
+
+  .field-value{
+    padding-left:8px;
+    cursor: pointer;
   }
 
   .select {

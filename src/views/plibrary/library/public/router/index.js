@@ -5,7 +5,6 @@
  */
 
 
-
 import navList from '@/common/constants/navList'
 import env from '@/common/config/env.js'
 
@@ -16,6 +15,7 @@ context.keys().forEach(key => {
 })
 
 const plibrary = {
+  name: 'library_home_page',
   path: '/library_home_page/:libraryId',
   component: () => import('@/views/plibrary/library/page/index'),
   children: [

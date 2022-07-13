@@ -1,7 +1,7 @@
 <template>
   <div class="content-page">
     <div class="my-manage-libraries">
-      <div>类目</div>
+      <div>书架</div>
       <div ref="tabsParent" class="libraries-body">
         <div ref="tabsChild" class="libraries">
           <div class="stats-item">

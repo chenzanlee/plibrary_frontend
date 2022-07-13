@@ -28,9 +28,8 @@
 <script>
 import { mapGetters, mapState } from 'vuex'
 import SidebarItem from './SidebarItem'
-// import { collection } from '@/common/utils/array'
-// import { getMenuList } from '@/http/api/menuInfo'
 import variables from '@/common/styles/variables.scss'
+import menuList from '@/http/api/plibrary/menuList'
 
 export default {
   components: {
@@ -39,17 +38,20 @@ export default {
   data() {
     return {
       openList: [],
-      appMenuList: []
+      appMenuList: menuList.children
     }
   },
   computed: {
     ...mapGetters(['sidebar', 'fullScreen']),
     ...mapState({
-      routes: state => { return state.app.siderMenuList }
+      routes: state => {
+        return menuList.children
+      }
     }),
-    // routes() {
-    //   return this.appMenuList
-    // },
+    routes() {
+      console.log('sss', menuList.children)
+      return menuList.children
+    },
     activeMenu() {
       const route = this.$route
       const { meta, path } = route
@@ -74,6 +76,7 @@ export default {
     tree(trees, name) {
       let level = 0
       const retNode = trees
+
       function deepSearch(trees, name) {
         level += 1
         for (var i = 0; i < trees.length; i++) {
@@ -83,6 +86,7 @@ export default {
           }
         }
       }
+
       deepSearch(trees, name)
       retNode != null ? retNode.data : null
       return retNode
@@ -97,18 +101,17 @@ export default {
 }
 </script>
 <style lang="scss">
-.menuSidebar{
-  .el-icon-arrow-down:before{
-    color: #CDD8F7;
-    font-weight: 600;
-    font-size: 14px;
-  }
+  .menuSidebar {
+    .el-icon-arrow-down:before {
+      color: #CDD8F7;
+      font-weight: 600;
+      font-size: 14px;
+    }
 
-  // }
-  .el-menu-item, .el-submenu__title {
-    overflow: hidden; //超出部分隐藏
-    white-space: nowrap; //文本不换行
-    text-overflow: ellipsis; // 不完全显示的末尾加上省略号
+    .el-menu-item, .el-submenu__title {
+      overflow: hidden; //超出部分隐藏
+      white-space: nowrap; //文本不换行
+      text-overflow: ellipsis; // 不完全显示的末尾加上省略号
+    }
   }
-}
 </style>

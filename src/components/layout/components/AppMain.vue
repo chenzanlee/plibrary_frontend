@@ -1,13 +1,7 @@
 <template>
   <section class="app-main" :style="isfullScreen ? 'height:100%' : ''">
     <transition name="fade-transform" mode="out-in">
-      <!-- <keep-alive > -->
       <router-view />
-      <!-- <keep-alive>
-        <router-view v-if="!$route.meta.noCache" />
-      </keep-alive>
-      <router-view v-if="$route.meta.noCache" /> -->
-      <!-- </keep-alive> -->
     </transition>
   </section>
 </template>

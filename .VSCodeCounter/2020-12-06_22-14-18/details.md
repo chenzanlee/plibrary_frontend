@@ -1585,7 +1585,7 @@ Total : 3121 files,  3087267 codes, 169382 comments, 88406 blanks, all 3345055 l
 | [src/components/ElementComponent/tableForm/index.vue](/src/components/ElementComponent/tableForm/index.vue) | Vue.js | 230 | 1 | 3 | 234 |
 | [src/components/EmptyInterface/index.vue](/src/components/EmptyInterface/index.vue) | Vue.js | 30 | 0 | 4 | 34 |
 | [src/components/Link/index.vue](/src/components/Link/index.vue) | Vue.js | 45 | 0 | 3 | 48 |
-| [src/components/Navbar/index.vue](/src/components/Navbar/index.vue) | Vue.js | 288 | 1 | 10 | 299 |
+| [src/components/Navbar/index.vue](/src/components/navbar/index.vue) | Vue.js | 288 | 1 | 10 | 299 |
 | [src/components/SvgIcon/index.vue](/src/components/SvgIcon/index.vue) | Vue.js | 45 | 4 | 4 | 53 |
 | [src/components/UnitVideo/index.vue](/src/components/UnitVideo/index.vue) | Vue.js | 375 | 9 | 5 | 389 |
 | [src/components/alarm-box/index.vue](/src/components/alarm-box/index.vue) | Vue.js | 97 | 0 | 3 | 100 |

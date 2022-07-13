@@ -6,36 +6,76 @@
         您的浏览器不支持 HTML5 video 标签。
       </video>
       <div class="login-r">
-        <!--  -->
         <div class="login-main" :class="landingType === 'modifyKey' ? 'login-main2' : ''">
           <div class="login-title">
-            <!-- i管书 -->
             <img src="@/assets/image/appname.png" alt="i管书">
           </div>
           <div :class="landingType === 'account' ? '' : 'login-main2'">
             <div class="login-row">
               <div class="login-row-tips">用户名</div>
-              <input v-model="loginForm.username" class="login-row-put1" type="text" @input="verificationLogin('username')">
+              <input
+                v-model="loginForm.username"
+                class="login-row-put1"
+                type="text"
+                @input="verificationLogin('username')">
               <span v-show="loginForm.usernameS" class="login-row-errtip">请输入用户名</span>
             </div>
             <div class="login-row login-row2">
               <div class="login-row-tips">密码</div>
-              <input v-model="loginForm.password" class="login-row-put1" type="password" @input="verificationLogin('password')">
+              <input
+                v-model="loginForm.password"
+                class="login-row-put1"
+                type="password"
+                @input="verificationLogin('password')">
               <span v-show="loginForm.passwordS" class="login-row-errtip">
                 {{ loginForm.password.length > 0 ? '密码最少六位' : '请输入密码' }}
               </span>
             </div>
             <div class="login-foot">
-              <div v-show="imgCheckFlag === 2" class="login-btn login-btn2 login-btn-bot imgFlagFail" @click="checkLogin"><img class="shield-img" src="@/assets/image/shieldFail.svg">{{ msg }}</div>
-              <div v-show="!imgCheckFlag && msg !== '验证失败'" class="login-btn login-btn2 login-btn-bot" :class="imgCheckFlag === 2 ? 'imgFlagFail' : ''" @click="checkLogin"><img class="shield-img" src="@/assets/image/shield.svg">{{ msg }}</div>
-              <div v-show="!imgCheckFlag && msg === '验证失败'" class="login-btn login-btn2 login-btn-bot imgFlagFail" @click="checkLogin"><img class="shield-img" src="@/assets/image/shieldFail.svg">{{ msg }}</div>
-              <div v-show="imgCheckFlag && imgCheckFlag !== 2" class="login-btn login-btn2 login-btn-bot imgFlagSucc"><img class="shield-img" src="@/assets/image/shieldSucc.svg">{{ msg }}</div>
+              <div
+                v-show="imgCheckFlag === 2"
+                class="login-btn login-btn2 login-btn-bot imgFlagFail"
+                @click="checkLogin"><img class="shield-img" src="@/assets/image/shieldFail.svg">{{ msg }}
+              </div>
+              <div
+                v-show="!imgCheckFlag && msg !== '验证失败'"
+                class="login-btn login-btn2 login-btn-bot"
+                :class="imgCheckFlag === 2 ? 'imgFlagFail' : ''"
+                @click="checkLogin">
+                <img
+                  class="shield-img"
+                  src="@/assets/image/shield.svg">{{
+                msg }}
+              </div>
+              <div
+                v-show="!imgCheckFlag && msg === '验证失败'"
+                class="login-btn login-btn2 login-btn-bot imgFlagFail"
+                @click="checkLogin"><img class="shield-img" src="@/assets/image/shieldFail.svg">{{ msg }}
+              </div>
+              <div v-show="imgCheckFlag && imgCheckFlag !== 2" class="login-btn login-btn2 login-btn-bot imgFlagSucc">
+                <img class="shield-img" src="@/assets/image/shieldSucc.svg">{{ msg }}
+              </div>
 
-              <div v-show="loginBtnS && imgCheckFlag === true" class="login-btn login-btn1" @click="handleLogin()"><i v-show="loadingState" class="el-icon-loading" />{{ loginBtnText }}</div>
-              <div v-show="!loginBtnS || imgCheckFlag !== true" class="login-btn login-btn1 login-btn-disable">{{ loginBtnText }}</div>
+              <div
+                v-show="loginBtnS && imgCheckFlag === true"
+                class="login-btn login-btn1"
+                @click="handleLogin()">
+                <i
+                  v-show="loadingState"
+                  class="el-icon-loading"/>{{ loginBtnText }}
+              </div>
+              <div
+                v-show="!loginBtnS || imgCheckFlag !== true"
+                class="login-btn login-btn1 login-btn-disable">{{
+                loginBtnText }}
+              </div>
             </div>
             <div class="login-title2">
-              <div class="login-txtBtn" @click="switchType('wechart')"><img src="@/assets/image/wetherIcon.svg" class="img-con">企业微信登录</div>
+              <div class="login-txtBtn" @click="switchType('wechart')">
+                <img
+                  src="@/assets/image/wetherIcon.svg"
+                  class="img-con">企业微信登录
+              </div>
               <div class="login-txtBtn" @click="switchType('modifyKey')">忘记密码</div>
             </div>
           </div>
@@ -47,14 +87,17 @@
             <img style="opacity:0;" src="@/assets/image/appname.png" alt="i管书">
           </div>
           <div class="login-wechart-body">
-            <div id="qrcode_element" ref="wechartBody" class="login-wechart-img" />
+            <div id="qrcode_element" ref="wechartBody" class="login-wechart-img"/>
           </div>
           <div class="login-foot2">
             <div class="login-btns login-btn2" @click="switchType('account')">密码登录</div>
           </div>
         </div>
         <!--  -->
-        <div v-if="landingTypeStatus === 'modifyKey'" class="login-reset" :class="landingType === 'modifyKey' ? 'login-reset2' : ''">
+        <div
+          v-if="landingTypeStatus === 'modifyKey'"
+          class="login-reset"
+          :class="landingType === 'modifyKey' ? 'login-reset2' : ''">
           <div class="login-title login-reset-title">
             <!-- i管书 -->
             <img src="@/assets/image/appname.png" alt="i管书">
@@ -67,16 +110,30 @@
               type="text"
               @keyup="entryPut('job')"
             >
-            <p class="login-txtBtn2 login-row-txt" @click="queryAccount('job')">查询账户</p>
+            <p
+              class="login-txtBtn2 login-row-txt"
+              @click="queryAccount('job')">查询账户</p>
           </div>
           <div class="login-row login-reset-row">
             <div class="login-row-tips login-row-tips2">账户列表</div>
-            <input v-model="accoundName" class="login-row-put1 login-row-put2" readonly="readonly" style="cursor:auto" type="text" @focus="entryPut('accountFocus')" @blur="entryPut('accountBlur')">
+            <input
+              v-model="accoundName"
+              class="login-row-put1 login-row-put2"
+              readonly="readonly"
+              style="cursor:auto"
+              type="text"
+              @focus="entryPut('accountFocus')"
+              @blur="entryPut('accountBlur')">
             <i class="iconfont login-row-icon" :class="accoundStatus ? 'iconfont login-row-icon2' : ''">&#xe632;</i>
             <div v-show="accoundStatus" class="login-reset-accList">
               <div v-show="accoundList.length === 0" class="login-reset-accList-nodata">暂无数据</div>
               <div v-show="accoundList.length > 0">
-                <div v-for="(i, index) in accoundList" :key="index" class="login-reset-accList-li" @click="selectAccount(i)">{{ i.username }}</div>
+                <div
+                  v-for="(i, index) in accoundList"
+                  :key="index"
+                  class="login-reset-accList-li"
+                  @click="selectAccount(i)">{{ i.username }}
+                </div>
               </div>
             </div>
           </div>
@@ -125,7 +182,10 @@
     <!-- 二维码登录选择 -->
     <div v-show="wechartUserStatus" class="account-qrcode">
       <div class="account-qrcode-body Highlight">
-        <p class="account-qrcode-body-title">选择账号 <i class="iconfont account-qrcode-body-title-close" @click="colseWechart()">&#xe61a;</i></p>
+        <p class="account-qrcode-body-title">选择账号
+          <i
+            class="iconfont account-qrcode-body-title-close"
+            @click="colseWechart()">&#xe61a;</i></p>
         <div class="account-qrcode-body-main">
           <div
             v-for="(i, index) in wechartUseList"
@@ -133,14 +193,15 @@
             class="account-qrcode-body-main-col"
             :class="userInfo && (userInfo.id === i.id) ? 'account-qrcode-body-main-col2' : ''"
             @click="loginOwner(i)"
-          >{{ i.username }}</div>
+          >{{ i.username }}
+          </div>
         </div>
         <div class="account-qrcode-body-foot">
           <button class="btn-border buttons account-qrcode-body-foot-btn" @click="colseWechart()">取消</button>
           <button class="btn-blue buttons account-qrcode-body-foot-btn" @click="setLocalInfo(null)">确定</button>
         </div>
       </div>
-      <div class="account-qrcode-foil" />
+      <div class="account-qrcode-foil"/>
     </div>
 
     <!-- 手机二维码 -->
@@ -158,7 +219,7 @@
         <div class="img-r-1">
           <div class="img-check">
             <div class="icon-contain" @click="doColse">
-              <div class="error" />
+              <div class="error"/>
             </div>
             <SlideVerify
               :l="42"
@@ -187,10 +248,10 @@ import img2 from './img2.jpg'
 import img3 from './img3.jpg'
 import img4 from './img4.jpg'
 import img5 from './img5.jpg'
-import { getMenuList } from '@/http/api/menuInfo'
+// import { getMenuList } from '@/http/api/menuInfo'
 import menuList from '@/http/api/mock'
 import { mapGetters } from 'vuex'
-import navList from '@/common/constants/navList'
+// import navList from '@/common/constants/navList'
 
 import {
   queryAccountJon,
@@ -201,12 +262,11 @@ import {
   getWechart,
   buildWxLoginInfo
 } from '@/http/api/signIn/loginIn'
-// import { storageFrontInfo } from '@/utils/overtService'
+import { storageFrontInfo } from '@/utils/overtService'
 import jwtDecode from 'jwt-decode'
 
 export default {
-  components: {
-  },
+  components: {},
   data() {
     return {
       isOnlyFeedScheduling: false,
@@ -276,10 +336,6 @@ export default {
     }
   },
   created() {
-    if (process.env.VUE_APP_ONLY_PACK_APP_NAME === 'feed-scheduling') {
-      this.isOnlyFeedScheduling = true
-    }
-
     const code = this.getQueryString('code')
     if (code) {
       this.codeLogin(code)
@@ -383,7 +439,8 @@ export default {
     getQueryString(name) {
       const reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i')
       const r = window.location.search.substr(1).match(reg)
-      if (r != null) return unescape(r[2]); return null
+      if (r != null) return unescape(r[2])
+      return null
     },
     // 登录表单验证
     verificationLogin(type) {
@@ -515,61 +572,57 @@ export default {
       this.$store
         .dispatch('LoginByUsername', this.loginForm)
         .then((res) => {
-          // this.getPermission()
+          this.getPermission()
           console.log('登陆成功')
-          const arr = [{
-            appCode: 'unit-evc',
-            title: '环控',
-            frontendRoutePath: '/unit-evc'
-          }]
-          this.getUserJurisdiction(arr)
-        }).catch(() => {
+          // const arr = [{
+          //   appCode: 'unit-evc',
+          //   title: '环控',
+          //   frontendRoutePath: '/unit-evc'
+          // }]
+          // this.getUserJurisdiction(arr)
+        })
+        .catch(() => {
           this.loadingState = false
           // this.imgCheckFlag = false
         })
     },
     // 获取登录权限
     async getUserJurisdiction(arr = []) {
-      // storageFrontInfo(arr[0].appCode).then((ress) => {
-      localStorage.currentlySelect = JSON.stringify({
-        appCode: arr[0].appCode,
-        name: arr[0].title,
-        path: arr[0].frontendRoutePath
+      console.log('in getuserJuirs')
+      storageFrontInfo('plibrary').then((ress) => {
+        localStorage.currentlySelect = JSON.stringify({
+          appCode: 'plibrary',
+          name: 'i管书',
+          path: '/home'
+        })
+        this.$router.push({
+          path: '/home'
+        })
       })
-      this.$router.push({
-        path: '/index'
-      })
-      // })
     },
     // 获取菜单
     getPermission() {
-      const data = {
-        frontAppCode: 'iot'
-      }
-      getMenuList(data).then(res => {
-        sessionStorage.setItem('navMenu', JSON.stringify(res))
-        if (res && res.length > 0) {
-          let arr = res.filter(item => item.frontendRoutePath)
-          if (process.env.VUE_APP_ONLY_PACK_APP_NAME === 'feed-scheduling') {
-            arr = arr.filter(item => navList[item.appCode])
-          }
-          if (arr && arr.length > 0) {
-            this.getUserJurisdiction(arr)
-          } else {
-            this.noPermission()
-          }
+      const res = menuList.children
+      sessionStorage.setItem('navMenu', JSON.stringify(res))
+      console.log('res', res)
+      console.log('res length', res.length)
+      if (res && res.length > 0) {
+        const arr = res
+        if (arr && arr.length > 0) {
+          console.log('getuserJuris')
+          this.getUserJurisdiction(arr)
         } else {
-          if (res.length === 0) {
-            this.noPermission()
-            this.$message.error('用户暂无菜单权限')
-            return
-          }
-          // this.noPermission()
-          this.$message.error('获取菜单失败，请重新登录')
+          this.noPermission()
         }
-      }).catch(() => {
+      } else {
+        if (res.length === 0) {
+          this.noPermission()
+          this.$message.error('用户暂无菜单权限')
+          return
+        }
+        // this.noPermission()
         this.$message.error('获取菜单失败，请重新登录')
-      })
+      }
     },
     // 暂无权限，跳转403页面
     noPermission() {
@@ -583,29 +636,42 @@ export default {
     // 查询账户
     async queryAccount(type) {
       if (type === 'job') {
-        if (!this.jobNumber) { this.$message.error('请输入工号'); return }
+        if (!this.jobNumber) {
+          this.$message.error('请输入工号')
+          return
+        }
         this.loadingReset = true
         await queryAccountJon({ jobNo: this.jobNumber }).then((res) => {
           this.loadingReset = false
           if (res) {
             this.accoundList = res
-          } else { this.$message.error('获取账号列表失败') }
+          } else {
+            this.$message.error('获取账号列表失败')
+          }
         })
       } else if (type === 'phone') {
-        if (!this.phoneNumber) { this.$message.error('请输入手机号'); return }
+        if (!this.phoneNumber) {
+          this.$message.error('请输入手机号')
+          return
+        }
         this.loadingReset = true
         await queryAccountPhone({ mobilePhone: this.phoneNumber }).then((res) => {
           this.loadingReset = false
           if (res) {
             this.accoundList = res
-          } else { this.$message.error('获取账号列表失败') }
+          } else {
+            this.$message.error('获取账号列表失败')
+          }
         })
       }
     },
     // 获取验证码
     async verificationCode() {
       if (this.resetType === 'job') {
-        if (!this.jobNumber || !this.accoundName) { this.$message.error('信息不完整，请完善'); return }
+        if (!this.jobNumber || !this.accoundName) {
+          this.$message.error('信息不完整，请完善')
+          return
+        }
         this.loadingReset = true
         const data = {
           jobNo: this.jobNumber,
@@ -622,7 +688,10 @@ export default {
           }
         })
       } else if (this.resetType === 'phone') {
-        if (!this.phoneNumber || !this.accoundName) { this.$message.error('信息不完整，请完善'); return }
+        if (!this.phoneNumber || !this.accoundName) {
+          this.$message.error('信息不完整，请完善')
+          return
+        }
         this.loadingReset = true
         await getVerificationCodePhone({ mobile: this.phoneNumber }).then((res) => {
           this.loadingReset = false
@@ -743,24 +812,18 @@ export default {
     },
     // 获取菜单
     getMenuDataList() {
-      const data = {
-        frontAppCode: 'unit-evc'
-      }
-      getMenuList(data).then(res => {
-        res[0].children.map(item => {
-          if (item.appCode === 'unit-evc') {
-            localStorage.setItem(
-              'appMenuList',
-              JSON.stringify(item)
-            )
-          }
-        })
-        this.$router.push({
-          path: 'platform-overview'
-        })
-      }).catch(() => {
-        this.loadingState = false
-        this.loginBtnText = '登录'
+      // getMenuList(data).then(res => {
+      const res = menuList
+      res[0].children.map(item => {
+        if (item.appCode === 'unit-evc') {
+          localStorage.setItem(
+            'appMenuList',
+            JSON.stringify(item)
+          )
+        }
+      })
+      this.$router.push({
+        path: 'platform-overview'
       })
     },
     setLocalInfo(info) {
@@ -781,5 +844,5 @@ export default {
 
 </script>
 <style lang="scss">
-@import "./index.scss";
+  @import "./index.scss";
 </style>

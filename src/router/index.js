@@ -21,16 +21,17 @@ import WlwAdministration from '@/views/WlwAdministration/A.Public/router/index'
 
 // 清洁生产
 import plibrary from '@/views/plibrary/library/public/router/index'
+import LibraryHome from '../views/plibrary/home'
 
 const baseRouterMap = [
-  {
-    path: '/',
-    redirect: '/index'
-  },
   // {
   //   path: '/',
-  //   redirect: '/login'
+  //   redirect: '/home'
   // },
+  {
+    path: '/',
+    redirect: '/login'
+  },
   // {
   //   // 平台概览
   //   path: '/platform-overview',
@@ -63,6 +64,7 @@ const routerAbout404 = [
 ]
 
 const appRouterMap = [
+  LibraryHome,
   IntelligentControl,
   userManagements,
   WlwAdministration,
@@ -100,4 +102,5 @@ export function resetRouter() {
   const newRouter = createRouter()
   router.matcher = newRouter.matcher
 }
+
 export default router

@@ -1,10 +1,10 @@
 
-const category = {
-  path: 'categories',
-  meta: { title: '类目', icon: 'Basic-Configuration', noCache: true },
-  redirect: '/unit-evc/baseDeploy/menuManager',
+const bookshelf = {
+  path: 'bookshelves',
+  meta: { title: '书架', icon: 'Basic-Configuration', noCache: true },
+  // redirect: '/unit-evc/baseDeploy/menuManager',
   alwaysShow: true,
-  component: () => import('@/views/plibrary/library/category/page/index'),
+  component: () => import('@/views/plibrary/library/bookshelf/page/index'),
   children: [
     {
       code: 'menuManager',
@@ -21,4 +21,4 @@ const category = {
   ]
 }
 
-export default category
+export default bookshelf

@@ -26,7 +26,6 @@
 import path from 'path'
 import { isExternal } from '@/common/utils'
 import Item from './Item'
-// import AppLink from '@/components/Link'
 
 export default {
   name: 'SidebarItem',

@@ -6,14 +6,14 @@
 </template>
 
 <script>
-import Navbar from '@/components/Navbar'
+import navbar from '@/components/navbar'
 import whiteList from '@/common/constants/whiteList'
 import { mapGetters } from 'vuex'
 
 export default {
   name: 'App',
   components: {
-    Navbar
+    navbar: navbar
   },
   data() {
     return {
@@ -56,10 +56,6 @@ export default {
   }
 
   #app {
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 80px; */
     padding: 0;
     width: 100%;
     height: 100vh;
@@ -68,7 +64,6 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
     font-size: 16px;
-    /* margin-top: 60px; */
   }
 
   .header-svg {
@@ -84,14 +79,6 @@ export default {
     width: 100%;
   }
 
-  /* .border{
-    width: 500px;
-    height: 500px;
-    border: 1px solid #6985FB;
-  box-shadow: inset 0 0 20px 0 #396DFF;
-  border-radius: 20px 10px 10px 10px;
-  background-image: linear-gradient(90deg, #00E6FF 3%, rgba(3,40,98,0.00) 100%);
-  } */
   .element-tree
   .el-tree--highlight-current
   .el-tree-node.is-current

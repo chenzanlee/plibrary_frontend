@@ -1,7 +1,7 @@
 <template>
   <!--
    @file 面包屑组件
-   @author author-name(李红波 15537053107)
+   @author author-name(li chenzan)
   -->
   <el-breadcrumb class="app-breadcrumb" separator="/">
     <transition-group name="breadcrumb">
@@ -20,6 +20,7 @@
 <script>
 import pathToRegexp from 'path-to-regexp'
 import { mapState } from 'vuex'
+
 export default {
   props: {
     breadList: {
@@ -29,7 +30,19 @@ export default {
   },
   data() {
     return {
-      levelList: []
+      levelList: [
+        {
+          title: '馆藏'
+        },
+        {
+          title: '成员'
+        },
+        {
+          title: '类目'
+        }, {
+          title: '书架'
+        }
+      ]
     }
   },
   computed: {
@@ -92,17 +105,13 @@ export default {
     },
     getBreadcrumb() {
       // only show routes with meta.title
-      const matched = this.$route.matched.filter(
-        (item) => item.meta && item.meta.title
-      )
+      const matched = this.$route.matched.filter((item) => item.meta && item.meta.title)
       // const F = matched[0]
 
       // if (!this.isDashboard(first)) {
       //   matched = [{ path: '/dashboard', meta: { title: 'Dashboard' }}].concat(matched)
       // }
-      this.levelList = matched.filter(
-        (item) => item.meta && item.meta.title && item.meta.breadcrumb !== false
-      )
+      this.levelList = matched.filter((item) => item.meta && item.meta.title && item.meta.breadcrumb !== false)
     },
     // breadcrumbClick(item) {
     //   if (item.meta && item.meta.title === '场区告警自检') {
@@ -116,9 +125,7 @@ export default {
       if (!name) {
         return false
       }
-      return (
-        name.trim().toLocaleLowerCase() === 'Dashboard'.toLocaleLowerCase()
-      )
+      return (name.trim().toLocaleLowerCase() === 'Dashboard'.toLocaleLowerCase())
     },
     pathCompile(path) {
       // To solve this problem https://github.com/PanJiaChen/vue-element-admin/issues/561

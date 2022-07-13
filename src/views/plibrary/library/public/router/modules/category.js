@@ -1,10 +1,10 @@
 
-const baseDeploy = {
-  path: 'baseDeploy',
-  meta: { title: '基础配置管理', icon: 'Basic-Configuration', noCache: true },
-  redirect: '/unit-evc/baseDeploy/menuManager',
+const category = {
+  path: 'categories',
+  meta: { title: '类目', icon: 'Basic-Configuration', noCache: true },
+  // redirect: '/unit-evc/baseDeploy/menuManager',
   alwaysShow: true,
-  component: () => import('@/views/IntelligentControl/baseDeploy/page'),
+  component: () => import('@/views/plibrary/library/category/page/index'),
   children: [
     {
       code: 'menuManager',
@@ -18,18 +18,7 @@ const baseDeploy = {
       meta: { title: '数据接口', noCache: true },
       component: () => import('@/views/IntelligentControl/baseDeploy/page/subpage/dataInterface')
     }
-    // {
-    //   path:'overview0fPlantEquipment',
-    //   meta: { title: '厂区设备概览', noCache: true },
-    //   component:() => import('@/views/IntelligentControl/baseDeploy/page/subpage/overview0fPlantEquipment')
-    // },
-    // {
-    //   path:'pigHouse',
-    //   meta: { title: '楼房猪舍', noCache: true },
-    //   component:() => import('@/views/IntelligentControl/baseDeploy/page/subpage/pigHouse')
-    // }
   ]
-
 }
 
-export default baseDeploy
+export default category
