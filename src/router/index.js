@@ -12,14 +12,6 @@ import Router from 'vue-router'
 Vue.use(Router)
 // 用户管理
 import userManagements from '@/views/userManagement/router/index'
-
-// 智能环控
-import IntelligentControl from '@/views/IntelligentControl/A.Public/router/index'
-
-// 清洁生产
-import WlwAdministration from '@/views/WlwAdministration/A.Public/router/index'
-
-// 清洁生产
 import plibrary from '@/views/plibrary/library/public/router/index'
 import LibraryHome from '../views/plibrary/home'
 
@@ -64,23 +56,11 @@ const routerAbout404 = [
 ]
 
 const appRouterMap = [
-  LibraryHome,
-  IntelligentControl,
   userManagements,
-  WlwAdministration,
   plibrary
 ]
 
-let constantRouterMap = []
-
-if (process.env.VUE_APP_ONLY_PACK_APP_NAME === 'feed-scheduling') {
-  // constantRouterMap = [...baseRouterMap, userManagements, dataCenter, IntelligentFeed, ...routerAbout404]
-  constantRouterMap = [...baseRouterMap, userManagements, ...routerAbout404]
-} else {
-  constantRouterMap = [...baseRouterMap, ...appRouterMap, ...routerAbout404]
-}
-
-console.log('ss-{}', constantRouterMap)
+const constantRouterMap = [...baseRouterMap, ...appRouterMap, ...routerAbout404]
 const createRouter = () =>
   new Router({
     scrollBehavior: () => ({ y: 0 }),

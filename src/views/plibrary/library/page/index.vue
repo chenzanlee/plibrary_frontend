@@ -6,11 +6,11 @@
         <div ref="tabsChild" class="libraries">
           <div class="stats-item">
             <div>类目:</div>
-            <div  class="field-value">{{ stats.categoryNum }}</div>
+            <div class="field-value">{{ stats.categoryNum }}</div>
           </div>
           <div class="stats-item">
             <div>书籍:</div>
-            <div  class="field-value">{{ stats.bookNum }}</div>
+            <div class="field-value">{{ stats.bookNum }}</div>
           </div>
           <div class="stats-item">
             <div>成员:</div>
@@ -18,11 +18,11 @@
           </div>
           <div class="stats-item">
             <div>书籍预约:</div>
-            <div  class="field-value">{{ stats.bookReserveNum }}</div>
+            <div class="field-value">{{ stats.bookReserveNum }}</div>
           </div>
           <div class="stats-item">
             <div>入馆申请:</div>
-            <div  class="field-value">{{ stats.joinApplicationNum }}</div>
+            <div class="field-value">{{ stats.joinApplicationNum }}</div>
           </div>
         </div>
       </div>
@@ -68,9 +68,7 @@ export default {
         bookNum: 0,
         copyNum: 0,
         bookReserveNum: 0,
-        memberNum: 0,
         joinApplicationNum: 0
-
       }
     }
   },
@@ -80,17 +78,17 @@ export default {
     }
     // this.startTimer()
   },
-  destroyed() {
-    if (this.isfullScreen) {
-      this.$store.dispatch('checkFullScreen')
-    }
-    // this.closeTimer()
-  },
   computed: {
     ...mapGetters(['fullScreen']),
     isfullScreen() {
       return this.fullScreen
     }
+  },
+  destroyed() {
+    if (this.isfullScreen) {
+      this.$store.dispatch('checkFullScreen')
+    }
+    // this.closeTimer()
   },
   methods: {
     startTimer() {
@@ -183,14 +181,15 @@ export default {
     margin: 0px 50px;
   }
 
-  .field-value{
-    padding-left:8px;
+  .field-value {
+    padding-left: 8px;
     cursor: pointer;
   }
 
   .select {
     color: red;
   }
+
 
   .login-btn-view {
     display: inline-block;

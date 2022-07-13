@@ -90,7 +90,8 @@ export default {
     },
     select(library) {
       this.selectLibraryId = library.libraryId
-      this.$router.push({ path: '/library_home_page/' + this.selectLibraryId })
+      // this.$router.push({ path: '/library_home_page/' + this.selectLibraryId })
+      this.$router.push({ path: '/library_home_page/library_transfer_records' })
     },
     goBack() {
       this.closeTimer()

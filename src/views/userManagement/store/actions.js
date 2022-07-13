@@ -7,7 +7,7 @@ import jwtDecode from 'jwt-decode'
 import {
   loginByUsername,
   refreshToken
-} from '@/http/api/plibrary/user-service'
+} from '@/http/interface/user/user-service'
 import { setToken, getRefresh, setRefresh, setAuthTime, setExpires, tokenWatch } from '@/views/userManagement/common/auth/authStore'
 import { setBytes } from '@/views/userManagement/common/auth/userStore'
 export default {

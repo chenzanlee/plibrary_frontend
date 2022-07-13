@@ -3,10 +3,9 @@
  * @file 模块路由
  * @author author-name(li chenzan)
  */
-
-
 import navList from '@/common/constants/navList'
 import env from '@/common/config/env.js'
+
 
 const context = require.context('@/views/plibrary/library/public/router/modules', false, /\.js$/)
 let moduleStores = []
